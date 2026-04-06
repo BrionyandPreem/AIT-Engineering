@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <title>AIT Engineering and Service</title>
+    
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            /* ปรับแต่ง Gradient และรูปภาพให้ดู Modern ขึ้น */
+            background-image: linear-gradient(rgba(10, 37, 64, 0.6), rgba(10, 37, 64, 0.6)), 
+                              url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed; /* เพิ่มลูกเล่นเวลา Scroll */
         }
     </style>
 </head>
@@ -27,11 +32,11 @@
 
             <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
                 <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
-                <a href="#" class="hover:text-orange-500">About Us <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="About.html" class="hover:text-orange-500">About Us <i class="fa-solid fa-caret-down text-[10px]"></i></a>
                 <a href="Pro1.html" class="hover:text-orange-500">Products & Services <i class="fa-solid fa-caret-down text-[10px]"></i></a>
-                <a href="#" class="hover:text-orange-500">Videos</a>
-                <a href="#" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
-                <a href="#" class="hover:text-orange-500">Contact <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="Videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="Activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="contact.html" class="hover:text-orange-500">Contact <i class="fa-solid fa-caret-down text-[10px]"></i></a>
             </nav>
 
             <div class="bg-gray-100 p-2 rounded">
@@ -106,7 +111,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
             <div class="flex flex-col items-center">
                 <div class="h-48 flex items-center mb-4">
-                    <img src="WT707.jpg" alt="WT707" class="max-h-full">
+                    <img src="p-0-1.jpg" alt="WT707" class="max-h-full">
                 </div>
                 <h3 class="text-blue-500 text-xs font-bold mb-1">WT707</h3>
                 <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
@@ -115,14 +120,41 @@
 
             <div class="flex flex-col items-center">
                 <div class="h-48 flex items-center mb-4">
-                    <img src="K20.jpg" alt="Westlock K20" class="max-h-full">
+                    <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-full">
                 </div>
                 <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock K20 Electro-pneumatic Positioner – ATEX / IEC, NEC</h3>
                 <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
                 <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
             </div>
 
+            <div class="flex flex-col items-center">
+                <div class="h-48 flex items-center mb-4">
+                    <img src="p-0-3.jpg" alt="Westlock K20" class="max-h-full">
+                </div>
+                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 6000-Series</h3>
+                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
             </div>
+
+            <div class="flex flex-col items-center">
+                <div class="h-48 flex items-center mb-4">
+                    <img src="p-0-4.png" alt="Westlock K20" class="max-h-full">
+                </div>
+                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock ICoT 5000-Series Intrinsically Safe, NEC Positioner</h3>
+                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class="h-48 flex items-center mb-4">
+                    <img src="p-0-5.png" alt="Westlock K20" class="max-h-full">
+                </div>
+                <h3 class="text-blue-500 text-[10px] font-bold mb-1 leading-tight px-2">Westlock Digital EPIC-2</h3>
+                <div class="w-4 h-[2px] bg-blue-200 mb-4"></div>
+                <button class="bg-[#3b82f6] text-white px-4 py-1 text-xs rounded shadow-md hover:bg-blue-700 transition">Read more</button>
+            </div>
+
+        </div>
     </div>
 </section>
 

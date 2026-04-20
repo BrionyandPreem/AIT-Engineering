@@ -1,0 +1,300 @@
+[
+  {
+    "name": "304 Manifold Accessory",
+    "sku": "304",
+    "category": "measurement,pressure,instrument",
+    "categoryTag": ["measurement","pressure","instrument"],
+    "img": "imgpro/304_Manifold_Accessory.jpg",
+    "desc": "<p>รายละเอียดของรุ่น 304...</p>"
+  },
+  {
+    "name": "306 Manifold Accessory",
+    "sku": "306",
+    "category": "",
+    "categoryTag": "pressure",
+    "img": "imgpro/306_Manifold_Accessory.jpg",
+    "desc": "<p>รายละเอียดของรุ่น 306...</p>"
+  },
+  {
+    "name": "2051C Series",
+    "sku": "2051C",
+    "category": "Pressure and Level",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051C_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051T Series",
+    "sku": "2051T",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051T_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051L Series",
+    "sku": "2051L",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2051L_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+
+    "name": "2088 Series",
+    "sku": "2088",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2088_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2090 Series",
+    "sku": "2090",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2090_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2140 Vibrating Fork",
+    "sku": "2140",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/2140_Vibrating_Fork.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051C Series",
+    "sku": "3051C",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051C_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051S Series",
+    "sku": "3051S",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051S_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051S Series ver2",
+    "sku": "3051S",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051S_Series_ver2.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051T Series",
+    "sku": "3051T",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/3051T_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "R305 Manifold Accessory",
+    "sku": "R305",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/R305_Manifold_Accessory.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-3408 Level Transmitter-Non-Contacting Radar",
+    "sku": "3408",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/Rosemount-3408_Level_Transmitter-Non-Contacting_Radar.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-5408 Non Contacting Radar Transmitter",
+    "sku": "5408",
+    "category": "Temperature",
+    "categoryTag": "pressure",
+    "img": "imgpro/Rosemount-5408_Non_Contacting_Radar_Transmitter.png",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "114C Thermowell Series",
+    "sku": "114C",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/114C_Thermowell_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "214C RTD Sensor",
+    "sku": "214C",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/214C_RTD_Sensor.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "214C Thermocouple Series",
+    "sku": "214C",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/214C_Thermocouple_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "248 Head Mount Series",
+    "sku": "248",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/248_Head_Mount_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "248 Rail Mount Series",
+    "sku": "248",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/248_Rail_Mount_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "644 Series",
+    "sku": "644",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/644_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-3144P Temperature Transmitter",
+    "sku": "3144P",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/Rosemount-3144P_Temperature_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "Rosemount-P-X-well Technology",
+    "sku": "P-X-well",
+    "category": "Temperature",
+    "categoryTag": "temperature",
+    "img": "imgpro/Rosemount-P-X-well_Technology.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "405 Compact Orifice Plate",
+    "sku": "405",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/405_Compact_Orifice_Plate.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "585 Annubar Primary Element",
+    "sku": "585",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/585_Annubar_Primary_Element.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051CFA Annubar",
+    "sku": "2051CFA",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/2051CFA_Annubar.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "2051CFC Compact Annubar Series",
+    "sku": "2051CFC",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/2051CFC_Compact_Annubar_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "3051SFA Annubar Series",
+    "sku": "3051SFA",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/3051SFA_Annubar_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8600 Vortex Series",
+    "sku": "8600",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8600_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8705 Flange Series",
+    "sku": "8705",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8705_Flange_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8711 Wafer Series",
+    "sku": "8711",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8711_Wafer_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8712E Transmitter",
+    "sku": "8712E",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8712E_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8721 Hygienic Series",
+    "sku": "8721",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8721_Hygienic_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8732EM Transmitter",
+    "sku": "8732EM",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8732EM_Transmitter.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8800 Dual Vortex Series",
+    "sku": "8800",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8800_Dual_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "8800 Vortex Series",
+    "sku": "8800",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/8800_Vortex_Series.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  },
+  {
+    "name": "prod-flexim-transmitters",
+    "sku": "prod-flexim-transmitters",
+    "category": "Flow",
+    "categoryTag": "flow",
+    "img": "imgpro/prod-flexim-transmitters.jpg",
+    "desc": "<p>Engineered with solid barstock...</p>"
+  }
+  
+]

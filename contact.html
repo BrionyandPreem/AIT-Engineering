@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,172 +13,643 @@
             background-size: cover;
             background-position: center;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
+
 <body class="font-sans">
 
-    <header class="bg-white shadow-sm">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex flex-col items-center">
-                <div class="flex space-x-1 text-4xl font-black italic">
-                    <span class="text-orange-500">a</span><span class="text-blue-600">i</span><span class="text-green-500">t</span>
-                </div>
-                <p class="text-[10px] text-blue-800 font-bold uppercase tracking-tighter">Engineering and Service</p>
+
+            <div class="flex items-center space-x-3">
+                <img src="AITlogo.jpg" alt="AIT Engineering & Service Logo" class="h-10 w-auto object-contain">
             </div>
 
             <nav class="hidden md:flex space-x-6 text-[13px] font-bold text-gray-700 uppercase">
-                <a href="index.html" class="border-b-4 border-green-500 pb-1 text-orange-500">Home</a>
-                <a href="About.html" class="hover:text-orange-500">About Us <i class="fa-solid fa-caret-down text-[10px]"></i></a>
-                <a href="pro1.html" class="hover:text-orange-500">Products & Services <i class="fa-solid fa-caret-down text-[10px]"></i></a>
-                <a href="Videos.html" class="hover:text-orange-500">Videos</a>
-                <a href="Activities.html" class="hover:text-orange-500">Activities <i class="fa-solid fa-caret-down text-[10px]"></i></a>
-                <a href="contact.html" class="hover:text-orange-500">Contact <i class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="index.html" class="hover:text-orange-500">Home</a>
+                <a href="about.html" class="hover:text-orange-500">About Us </a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="products.html"
+                        class="hover:text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        PRODUCTS & SERVICES <i class="fa-solid fa-caret-down text-[10px]"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-72 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="1measurement.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Measurement and
+                                Instrumentation</a></li>
+                        <li><a href="2valves.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i>Valves and Accessories</a></li>
+                        <li><a href="3machines.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Machines and Process Systems</a>
+                        </li>
+                        <li><a href="4system.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> System and Equipment</a></li>
+                        <li><a href="5innovation.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-700 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Innovation</a></li>
+                        <li><a href="6service.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-green-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Service</a></li>
+                        <li><a href="7camille.html"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-500 flex items-center gap-3"><i
+                                    class="fa-solid fa-folder-open text-gray-400"></i> Camille Bauer</a></li>
+                    </ul>
+                </li>
+
+                <a href="videos.html" class="hover:text-orange-500">Videos</a>
+                <a href="activities.html" class="hover:text-orange-500">Activities <i
+                        class="fa-solid fa-caret-down text-[10px]"></i></a>
+
+                <li class="relative group h-full flex items-center list-none">
+                    <a href="contact.html"
+                        class="border-b-4 border-green-500 pb-1 text-orange-500 transition-colors duration-300 flex items-center gap-1">
+                        CONTACT <i class="fa-solid fa-caret-down text-[12px] ml-0.5"></i>
+                    </a>
+
+                    <ul class="absolute top-full left-0 w-56 bg-white shadow-xl border-t-2 border-orange-500 py-2 
+                        opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                        transition-all duration-300 z-50">
+                        <li><a href="contact.html?branch=bangkok"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-location-dot text-gray-400"></i>Bangkok (Head Office)</a></li>
+                        <li><a href="contact.html?branch=ratchaburi"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 border-b border-gray-100 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Ratchaburi Branch</a></li>
+                        <li><a href="contact.html?branch=rayong"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Rayong Branch</a></li>
+                        <li><a href="contact.html?branch=khonkaen"
+                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-orange-600 flex items-center gap-3"><i
+                                    class="fa-solid fa-map-location-dot text-gray-400"></i>Khon Kaen Branch</a></li>
+                    </ul>
+                </li>
             </nav>
 
-            <div class="bg-gray-100 p-2 rounded">
-                <i class="fa-solid fa-magnifying-glass text-gray-600"></i>
+            <div class="flex items-center gap-2 md:gap-4">
+                <div class="relative flex items-center">
+                    <i
+                        class="fa-solid fa-magnifying-glass text-gray-400 absolute left-3 pointer-events-none text-xs"></i>
+                    <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search..."
+                        class="bg-gray-100 pl-9 pr-3 py-1.5 rounded-full focus:outline-none text-sm w-32 md:w-48 border border-transparent focus:border-orange-400 transition-all">
+                </div>
+
+                <button onclick="toggleMobileMenu()"
+                    class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded-full transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu-overlay" onclick="toggleMobileMenu()"
+            class="fixed inset-0 bg-black/50 invisible opacity-0 z-[101] transition-all duration-300 backdrop-blur-sm">
+        </div>
+
+        <div id="mobile-menu-drawer"
+            class="fixed top-0 right-[-100%] w-[80%] max-w-[300px] h-full bg-white z-[102] transition-all duration-500 ease-in-out shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <img src="AITlogo.jpg" alt="Logo" class="h-8 w-auto">
+                <button onclick="toggleMobileMenu()" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4">
+                <ul class="space-y-2 text-[14px] font-bold text-gray-700 uppercase">
+                    <li><a href="index.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Home</a></li>
+                    <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
+
+                    <li>
+                        <button onclick="toggleAccordion('products-sub')"
+                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
+                            Products & Services <i id="products-sub-icon"
+                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
+                        </button>
+                        <ul id="products-sub"
+                            class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
+                            <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
+                                    Instrumentation</a></li>
+                            <li><a href="2valves.html" class="block py-2 border-b border-white">Valves and
+                                    Accessories</a></li>
+                            <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
+                                    Systems</a></li>
+                            <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="videos.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Videos</a></li>
+                    <li><a href="activities.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Activities</a>
+                    </li>
+                    <li><a href="contact.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">Contact</a></li>
+                </ul>
             </div>
         </div>
     </header>
-    
-<div class="bg-white min-h-screen font-sans text-gray-700">
-    
-    <section class="bg-[#5a9ad4] py-8 text-center">
-        <h1 class="text-white text-4xl font-bold uppercase tracking-widest">CONTACT AIT</h1>
-        
-        <div class="container mx-auto mt-6 flex flex-wrap justify-center gap-2 px-4">
-            <a href="index.html"><button class="bg-[#ff6600] text-white px-6 py-2 text-xs font-bold uppercase rounded shadow-sm">Home</button></a>
-            <a href="#khonkaen"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Khonkaen Branch</button></a>
-            <a href="#ratchaburi"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Ratchaburi Branch</button></a>
-            <a href="#rayong"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition">Rayong Branch</button></a>
-            <a href="contact.html"><button class="text-white hover:bg-white/20 px-4 py-2 text-xs font-bold uppercase transition border-b-2 border-white">Bangkok (Head Office)</button></a>
-        </div>
-    </section>
 
-    <section class="bg-[#345e82] py-16 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col lg:flex-row gap-16">
+    <div class="bg-[#fcfcfd] font-sans text-gray-700 min-h-screen pb-20">
+        <section class="relative py-16 text-center overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-sky-100/50 blur-[100px] rounded-full"></div>
+            
+            <div class="relative z-10">
+                <h1 class="text-[#345e82] text-5xl md:text-6xl font-black uppercase tracking-[0.15em] mb-4">
+                    GET IN <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-orange-500">TOUCH</span>
+                </h1>
+                <p class="text-gray-400 tracking-[0.3em] text-xs font-bold uppercase">AIT Engineering and Service Co., Ltd.</p>
+            </div>
+
+            <div class="container mx-auto mt-12 flex flex-wrap justify-center gap-3 px-4 relative z-10">
+                <a href="index.html">
+                    <button class="bg-white hover:bg-gray-50 text-gray-600 px-8 py-3 text-xs font-bold uppercase rounded-2xl border border-gray-100 shadow-sm transition-all">
+                        Home
+                    </button>
+                </a>
+
+                <!-- ทุกปุ่มสาขาเริ่มต้นด้วยสีขาวคลีนๆ เหมือนกันหมดจ้ะ -->
+                <button onclick="showBranch('khonkaen', this)" 
+                    class="branch-btn bg-white text-gray-400 px-8 py-3 text-xs font-bold uppercase rounded-2xl border border-gray-100 shadow-sm transition-all">
+                    Khonkaen
+                </button>
                 
-                <div class="lg:w-1/2">
-                    <h2 class="text-2xl font-bold mb-1 border-b border-gray-400 pb-3">Bangkok Head office Address</h2>
+                <button onclick="showBranch('ratchaburi', this)" 
+                    class="branch-btn bg-white text-gray-400 px-8 py-3 text-xs font-bold uppercase rounded-2xl border border-gray-100 shadow-sm transition-all">
+                    Ratchaburi
+                </button>
+                
+                <button onclick="showBranch('rayong', this)" 
+                    class="branch-btn bg-white text-gray-400 px-8 py-3 text-xs font-bold uppercase rounded-2xl border border-gray-100 shadow-sm transition-all">
+                    Rayong
+                </button>
+
+                <!-- ปุ่ม Bangkok (HQ) ตั้ง id ไว้เพื่อให้สคริปต์หาเจอตอนโหลดหน้าแรกจ้ะ -->
+                <button id="default-btn" onclick="showBranch('bangkok', this)"
+                    class="branch-btn bg-[#ff6600] text-white px-10 py-3 text-xs font-bold uppercase rounded-2xl shadow-[0_10px_20px_rgba(255,102,0,0.2)] transition-all">
+                    Bangkok (HQ)
+                </button>
+            </div>
+        </section>
+
+
+        <section class="container mx-auto px-4">
+            <div id="bangkok" class="branch-section">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                     
-                    <div class="mt-8 space-y-8 text-sm leading-relaxed">
+                    <div class="lg:col-span-5 bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.03)] flex flex-col justify-between">
                         <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Address:</p>
-                            <p class="text-gray-100">75/76, Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.</p>
+                            <h2 class="text-3xl font-bold text-[#345e82] mb-1">Bangkok</h2>
+                            <h3 class="text-lg font-medium text-orange-500 mb-20 tracking-widest uppercase">Head Office</h3>
+
+                            <div class="space-y-10">
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Location</p>
+                                    <p class="text-gray-600 leading-relaxed font-light">
+                                        75/76 , Soi Romklao 1 , Saensaep Minburi ,<br> Bangkok , 10510 , Thailand.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Connect</p>
+                                    <div class="text-gray-600 font-light space-y-1">
+                                        <p>TEL : +66-(0)2-918 2060-1</p>
+                                        <p>Fax : +66-(0)2-918 2062</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Direct Mail</p>
+                                    <a href="mailto:info@aitengineering.co.th" class="text-sky-600 hover:text-orange-500 transition-colors border-b border-sky-50 pb-1 italic font-light">
+                                        info@aitengineering.co.th
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">Telephone:</p>
-                            <p class="text-gray-100">TEL : +66 2 9182060</p>
-                            <p class="text-gray-100">Fax : +66 2 918 2062</p>
-                        </div>
-
-                        <div>
-                            <p class="font-bold text-gray-300 uppercase mb-2">E-mail:</p>
-                            <a href="mailto:info@aitengineering.co.th" class="text-blue-300 hover:underline">info@aitengineering.co.th</a>
+                        <div class="mt-12 rounded-[2rem] overflow-hidden border border-gray-100 h-[300px] shadow-lg">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
                         </div>
                     </div>
 
-                    <h3 class="text-2xl font-bold mt-12 mb-6 text-gray-100">แผนที่และการเดินทาง</h3>
-                    <div class="rounded overflow-hidden shadow-2xl border-4 border-white/10 h-[350px]">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
+
+                        <form id="contactForm" class="space-y-8">
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required
+                                        class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Email</label>
+                                        <input type="email" id="email" placeholder="example@gmail.com" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Tel.</label>
+                                        <input type="tel" id="tel" placeholder="Your Phone Number" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Message</label>
+                                <textarea id="message" rows="5" placeholder="How can we support your business?" required
+                                    class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-orange-500/30 focus:ring-4 focus:ring-orange-500/5 transition-all resize-none"></textarea>
+                            </div>
+
+                            <div class="pt-4">
+                                <p class="text-[10px] font-bold uppercase text-gray-400 mb-6 tracking-widest">Send to</p>
+                                <div class="flex flex-wrap gap-8">
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Sales" class="w-4 h-4 mr-3 accent-orange-500" required>
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">info@aitengineering.co.th</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Support" class="w-4 h-4 mr-3 accent-orange-500">
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">support@aitengineering.co.th</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-5 rounded-2xl uppercase tracking-[0.3em] shadow-lg transition-all active:scale-95">
+                                Submit Inquiry
+                            </button>
+                        </form>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="lg:w-1/2 bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-                    <h2 class="text-2xl font-bold mb-8 text-gray-100">Contact Bangkok (Head office)</h2>
+
+        <section class="container mx-auto px-4">
+            <div id="ratchaburi" class="branch-section">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                     
-                    <form class="space-y-5">
-                        <div class="grid grid-cols-1 gap-5">
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Full Name</label>
-                                <input type="text" placeholder="Full Name" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
+                    <div class="lg:col-span-5 bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-[#345e82] mb-1">Ratchaburi</h2>
+                            <h3 class="text-lg font-medium text-sky-500 mb-20 tracking-widest uppercase">Branch</h3>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-10">
                                 <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Email</label>
-                                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Location</p>
+                                    <p class="text-gray-600 leading-relaxed font-light">
+                                        102/30-31 , T.Thapa , A.Banpong ,<br> Ratchaburi , 70110 , Thailand.
+                                    </p>
                                 </div>
+
                                 <div>
-                                    <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Tel.</label>
-                                    <input type="text" placeholder="Tel" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Connect</p>
+                                    <div class="text-gray-600 font-light space-y-1">
+                                        <p>TEL : +66-(0)32-371 350</p>
+                                        <p>Fax : +66-(0)85-660 0127</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Subject</label>
-                                <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none">
-                            </div>
-
-                            <div>
-                                <label class="block text-gray-300 text-[11px] font-bold uppercase mb-1">Message</label>
-                                <textarea rows="4" placeholder="Message" class="w-full px-4 py-3 rounded text-gray-800 focus:ring-2 focus:ring-orange-500 outline-none resize-none"></textarea>
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Direct Mail</p>
+                                    <a href="mailto:banpong@aitengineering.co.th" class="text-sky-600 hover:text-orange-500 transition-colors border-b border-sky-50 pb-1 italic font-light">
+                                        banpong@aitengineering.co.th
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="pt-4">
-                            <p class="text-gray-300 text-[11px] font-bold uppercase mb-3">Send To</p>
-                            <div class="space-y-2 text-sm text-gray-200">
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">info@aitengineering.co.th</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer group">
-                                    <input type="radio" name="send_to" class="w-4 h-4 mr-3 accent-white">
-                                    <span class="group-hover:text-white transition">support@aitengineering.co.th</span>
-                                </label>
-                            </div>
+                        <div class="mt-12 rounded-[2rem] overflow-hidden border border-gray-100 h-[300px] shadow-lg">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.776696653932!2d99.84184529999999!3d13.852438400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e31c58e27b7827%3A0xbd8454f63980b6f2!2sAIT%20Engineering%20and%20Service%20(Banpong)!5e0!3m2!1sth!2sth!4v1777747356725!5m2!1sth!2sth" 
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
+                    </div>
 
-                        <button type="submit" class="w-full bg-[#5cb85c] hover:bg-[#4cae4c] text-white font-bold py-4 rounded uppercase shadow-lg transition-all active:scale-95 mt-4">
-                            Send Message
-                        </button>
-                    </form>
+                    <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
+
+                        <form id="contactForm" class="space-y-8">
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required
+                                        class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Email</label>
+                                        <input type="email" id="email" placeholder="example@gmail.com" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Tel.</label>
+                                        <input type="tel" id="tel" placeholder="Your Phone Number" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Message</label>
+                                <textarea id="message" rows="5" placeholder="How can we support your business?" required
+                                    class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-orange-500/30 focus:ring-4 focus:ring-orange-500/5 transition-all resize-none"></textarea>
+                            </div>
+
+                            <div class="pt-4">
+                                <p class="text-[10px] font-bold uppercase text-gray-400 mb-6 tracking-widest">Send to</p>
+                                <div class="flex flex-wrap gap-8">
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Sales" class="w-4 h-4 mr-3 accent-orange-500" required>
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">info@aitengineering.co.th</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Support" class="w-4 h-4 mr-3 accent-orange-500">
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">support@aitengineering.co.th</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-5 rounded-2xl uppercase tracking-[0.3em] shadow-lg transition-all active:scale-95">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
-</div>
+        </section>
 
-<footer class="bg-[#0a2540] py-10 text-white text-center">
-    <div class="container mx-auto px-4">
-        
-        <div class="mb-6">
-            <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
-            <div class="flex justify-center space-x-3">
-                <a href="#" class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-facebook-f text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-linkedin-in text-xl"></i>
-                </a>
-                <a href="#" class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                    <i class="fa-brands fa-youtube text-xl"></i>
-                </a>
+
+        <section class="container mx-auto px-4">
+            <div id="rayong" class="branch-section">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <div class="lg:col-span-5 bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-[#345e82] mb-1">Rayong</h2>
+                            <h3 class="text-lg font-medium text-sky-500 mb-20 tracking-widest uppercase">Branch</h3>
+
+                            <div class="space-y-10">
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Location</p>
+                                    <p class="text-gray-600 leading-relaxed font-light">
+                                        188/211 , Sukhumvit Road , Mapthaput ,<br> A.Muang , Rayong , 21150 , Thailand.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Connect</p>
+                                    <div class="text-gray-600 font-light space-y-1">
+                                        <p>TEL : +66-(0)38-020 198-99</p>
+                                        <p>Fax : +66-(0)38-020 197</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Direct Mail</p>
+                                    <a href="mailto:aitsales4@aitengineering.co.th" class="text-sky-600 hover:text-orange-500 transition-colors border-b border-sky-50 pb-1 italic font-light">
+                                        aitsales4@aitengineering.co.th
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 rounded-[2rem] overflow-hidden border border-gray-100 h-[300px] shadow-lg">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.930215416965!2d101.1611294!3d12.7179755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102f07802e97da9%3A0x3b2fc0615cd588dc!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd.%20(%20Rayong%20)!5e0!3m2!1sth!2sth!4v1777748317867!5m2!1sth!2sth" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
+
+                        <form id="contactForm" class="space-y-8">
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required
+                                        class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Email</label>
+                                        <input type="email" id="email" placeholder="example@gmail.com" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Tel.</label>
+                                        <input type="tel" id="tel" placeholder="Your Phone Number" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Message</label>
+                                <textarea id="message" rows="5" placeholder="How can we support your business?" required
+                                    class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-orange-500/30 focus:ring-4 focus:ring-orange-500/5 transition-all resize-none"></textarea>
+                            </div>
+
+                            <div class="pt-4">
+                                <p class="text-[10px] font-bold uppercase text-gray-400 mb-6 tracking-widest">Send to</p>
+                                <div class="flex flex-wrap gap-8">
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Sales" class="w-4 h-4 mr-3 accent-orange-500" required>
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">info@aitengineering.co.th</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Support" class="w-4 h-4 mr-3 accent-orange-500">
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">support@aitengineering.co.th</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-5 rounded-2xl uppercase tracking-[0.3em] shadow-lg transition-all active:scale-95">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
-            <p>
-                WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
-            </p>
-            <p class="text-sm font-medium">
-                +66 2 9182060
-            </p>
-        </div>
 
+        <section class="container mx-auto px-4">
+            <div id="khonkaen" class="branch-section">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    
+                    <div class="lg:col-span-5 bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.03)] flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-[#345e82] mb-1">Khon Kaen</h2>
+                            <h3 class="text-lg font-medium text-sky-500 mb-20 tracking-widest uppercase">Branch</h3>
+
+                            <div class="space-y-10">
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Location</p>
+                                    <p class="text-gray-600 leading-relaxed font-light">
+                                        324/78 , Mittraphap Road , T.Sila ,<br> A.Muang , Khon Kaen , 40000 , Thailand.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Connect</p>
+                                    <div class="text-gray-600 font-light space-y-1">
+                                        <p>TEL : +66-(0)43 465 470</p>
+                                        <p>Fax : +66-(0)43 465 485</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p class="text-[10px] font-bold text-gray-300 uppercase tracking-[0.2em] mb-2">Direct Mail</p>
+                                    <a href="mailto:aitsales1@aitengineering.co.th" class="text-sky-600 hover:text-orange-500 transition-colors border-b border-sky-50 pb-1 italic font-light">
+                                        aitsales1@aitengineering.co.th
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 rounded-[2rem] overflow-hidden border-2 border-dashed border-gray-200 h-[300px] flex flex-col items-center justify-center bg-gray-50 text-gray-400">
+                            <p class="font-bold uppercase tracking-widest text-xs">Location Map Coming Soon</p>
+                            <p class="text-[10px] mt-1">Please contact our staff for direction</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
+
+                        <form id="contactForm" class="space-y-8">
+                            <div class="space-y-6">
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
+                                    <input type="text" id="name" placeholder="Your Name" required
+                                        class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Email</label>
+                                        <input type="email" id="email" placeholder="example@gmail.com" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Tel.</label>
+                                        <input type="tel" id="tel" placeholder="Your Phone Number" required
+                                            class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Message</label>
+                                <textarea id="message" rows="5" placeholder="How can we support your business?" required
+                                    class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-orange-500/30 focus:ring-4 focus:ring-orange-500/5 transition-all resize-none"></textarea>
+                            </div>
+
+                            <div class="pt-4">
+                                <p class="text-[10px] font-bold uppercase text-gray-400 mb-6 tracking-widest">Send to</p>
+                                <div class="flex flex-wrap gap-8">
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Sales" class="w-4 h-4 mr-3 accent-orange-500" required>
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">info@aitengineering.co.th</span>
+                                    </label>
+                                    <label class="flex items-center cursor-pointer group">
+                                        <input type="radio" name="dept" value="Support" class="w-4 h-4 mr-3 accent-orange-500">
+                                        <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">support@aitengineering.co.th</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-5 rounded-2xl uppercase tracking-[0.3em] shadow-lg transition-all active:scale-95">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</footer>
+
+    <footer class="bg-[#0a2540] py-10 text-white text-center">
+        <div class="container mx-auto px-4">
+
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
+                <div class="flex justify-center space-x-3">
+                    <a href="#"
+                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#"
+                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
+                        <i class="fa-brands fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
+                <p>
+                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
+                </p>
+                <p class="text-sm font-medium">
+                    +66 2 9182060
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+                if (!this.checkValidity()) {
+                    event.preventDefault();
+                    alert('Please fill out all required fields before submitting!');
+                } else {
+                    alert('Thank you! Your inquiry has been sent.');
+                }
+            });
+            </script>
+
+            <script>
+                function showBranch(branchId, btnElement) {
+            const sections = document.querySelectorAll('.branch-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            document.getElementById(branchId).style.display = 'block';
+
+            const allButtons = document.querySelectorAll('.branch-btn');
+            allButtons.forEach(btn => {
+                btn.classList.remove('bg-[#ff6600]', 'text-white', 'shadow-[0_10px_20px_rgba(255,102,0,0.2)]');
+                btn.classList.add('bg-white', 'text-gray-400');
+            });
+
+            btnElement.classList.remove('bg-white', 'text-gray-400');
+            btnElement.classList.add('bg-[#ff6600]', 'text-white', 'shadow-[0_10px_20px_rgba(255,102,0,0.2)]');
+        }
+
+        window.onload = function() {
+            const defaultBtn = document.getElementById('default-btn');
+            if(defaultBtn) showBranch('bangkok', defaultBtn);
+        };
+    </script>
 
 </body>
 </html>

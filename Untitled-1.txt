@@ -2006,3 +2006,90 @@ function loadSubCategory(catName) {
     <script src="script.js"></script>
 </body>
 </html>
+**********************************
+<main class="md:w-3/4 py-8 md:pl-12">
+                
+                <!-- แสดงเมื่อ tab เป็น 'filtration' -->
+                <div x-show="tab === 'filtration'">
+                    <div class="mb-12">
+                        <h2 class="text-[#1a4066] text-3xl font-black uppercase tracking-tighter mb-4">Filtration System</h2>
+                        <div class="flex gap-4 items-center border-l-4 border-orange-500 pl-4 bg-orange-50/30 py-4">
+                            <p class="text-orange-600 text-lg font-bold leading-tight uppercase">
+                                Simeoni Easy Trap & DAF Unit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <img src="imgpro4/SIMEONI_DAF_Description.jpg" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/SIMEONI_DAF_Introduction.jpg" class="w-1/2 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/SIMEONI_DAF_Results.jpg" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/SIMEONI_DAF_Zero_Velocity_System.jpg" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/SIMEONI_DAF.jpg" class="w-full h-auto rounded-2xl border border-gray-100">
+                    </div>
+
+                    <div class="mb-12 mt-16">
+                        <div class="flex gap-4 items-center border-l-4 border-orange-500 pl-4 bg-orange-50/30 py-4">
+                            <p class="text-orange-600 text-lg font-bold leading-tight uppercase">
+                                Simeoni Easy Trap
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <img src="imgpro4/Easy_Trap_System.jpg" class="w-2/3 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/Easy_Trap_Description.jpg" class="w-2/3 h-auto rounded-2xl border border-gray-100">
+                    </div>
+                </div>
+
+
+                <!-- แสดงเมื่อ tab เป็น 'dcs' -->
+                <div x-show="tab === 'dcs'" x-cloak>
+                    <div class="mb-12">
+                        <h2 class="text-[#1a4066] text-3xl font-black uppercase tracking-tighter mb-4">Deltav System</h2>
+                        <div class="flex gap-4 items-center border-l-4 border-orange-500 pl-4 bg-orange-50/30 py-4">
+                            <p class="text-orange-600 text-lg font-bold leading-tight uppercase">
+                                Embedded Advanced Control Applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <img src="imgpro4/1_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/1.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/2_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.2_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.3_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4.2_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                    </div>
+                </div>
+
+
+                <div x-show="tab === 'w'" x-cloak>
+                    <div class="mb-12">
+                        <h2 class="text-[#1a4066] text-3xl font-black uppercase tracking-tighter mb-4">Deltav System</h2>
+                        <div class="flex gap-4 items-center border-l-4 border-orange-500 pl-4 bg-orange-50/30 py-4">
+                            <p class="text-orange-600 text-lg font-bold leading-tight uppercase">
+                                Embedded Advanced Control Applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-12">
+                        <img src="imgpro4/1_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/1.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/2_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.2_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/3.3_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4_DeltaV.png" class="w-4/5 h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4.1_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                        <img src="imgpro4/4.2_DeltaV.png" class="w-full h-auto rounded-2xl border border-gray-100">
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</section>

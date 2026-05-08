@@ -17,6 +17,9 @@
         html {
             scroll-behavior: smooth;
         }
+        .branch-content { 
+            display: none; 
+        }
     </style>
 </head>
 
@@ -69,8 +72,7 @@
                 </li>
 
                 <a href="videos.html" class="hover:text-orange-500">Videos</a>
-                <a href="activities.html" class="hover:text-orange-500">Activities <i
-                        class="fa-solid fa-caret-down text-[10px]"></i></a>
+                <a href="activities.html" class="hover:text-orange-500">Activities</a>
 
                 <li class="relative group h-full flex items-center list-none">
                     <a href="contact.html"
@@ -646,9 +648,40 @@
         }
 
         window.onload = function() {
-            const defaultBtn = document.getElementById('default-btn');
-            if(defaultBtn) showBranch('bangkok', defaultBtn);
+            // 1. ดึงค่าจาก URL มาดูว่ามี ?branch=... ไหม
+            const urlParams = new URLSearchParams(window.location.search);
+            const branchName = urlParams.get('branch');
+
+            if (branchName) {
+                // 2. หาปุ่มที่มีฟังก์ชัน showBranch และมีชื่อสาขาตรงกับใน URL
+                // เราจะหาปุ่มที่มีคำสั่ง onclick ที่มีชื่อสาขานั้นอยู่จ้ะ
+                const targetBtn = document.querySelector(`button[onclick*="'${branchName}'"]`);
+                
+                if (targetBtn) {
+                    // 3. สั่งคลิกปุ่มนั้นทันที!
+                    targetBtn.click();
+                }
+            } else {
+                // ถ้าไม่มีระบุสาขามา ให้กดปุ่ม Default (Bangkok) ตามปกติจ้ะ
+                const defaultBtn = document.getElementById('default-btn');
+                if (defaultBtn) defaultBtn.click();
+            }
         };
+
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const branchName = urlParams.get('branch') || 'bangkok'; // ถ้าไม่มีสาขาให้เลือก bangkok
+
+            // ใช้ฟังก์ชันเดิมที่เปรมมี แต่สั่งรันทันที
+            document.addEventListener("DOMContentLoaded", function() {
+                const targetBtn = document.querySelector(`button[onclick*="'${branchName}'"]`) || document.getElementById('default-btn');
+                
+                if (targetBtn) {
+                    // สั่งรันฟังก์ชัน showBranch ทันทีโดยไม่ผ่านการคลิกแบบจำลอง (ป้องกันการกระตุก)
+                    showBranch(branchName, targetBtn);
+                }
+            });
+        })();
     </script>
 
 </body>

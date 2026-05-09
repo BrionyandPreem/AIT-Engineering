@@ -164,283 +164,143 @@
         </div>
     </header>
 
-   <section class="swiper heroSwiper relative h-[600px] w-full overflow-hidden">
     
-    <!-- Custom Pagination Dots -->
-    <style>
-        .heroSwiper .swiper-pagination-bullet {
-            width: 8px; height: 8px;
-            background: rgba(255,255,255,0.4);
-            opacity: 1;
-            transition: all 0.3s ease;
-        }
-        .heroSwiper .swiper-pagination-bullet-active {
-            width: 28px;
-            border-radius: 4px;
-            background: #f97316;
-        }
-        .heroSwiper .swiper-button-prev,
-        .heroSwiper .swiper-button-next {
-            width: 48px; height: 48px;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 50%;
-            color: rgba(255,255,255,0.7);
-            transition: all 0.3s ease;
-        }
-        .heroSwiper .swiper-button-prev:hover,
-        .heroSwiper .swiper-button-next:hover {
-            background: rgba(255,255,255,0.2);
-            color: #fff;
-        }
-        .heroSwiper .swiper-button-prev::after,
-        .heroSwiper .swiper-button-next::after {
-            font-size: 14px;
-            font-weight: 700;
-        }
+  <div class="ait-web-wrapper font-sans">
 
-        /* Slide entrance animation */
-        .slide-content {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.9s ease 0.3s, transform 0.9s ease 0.3s;
-        }
-        .swiper-slide-active .slide-content {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .slide-content .badge {
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
-        }
-        .slide-content .heading {
-            opacity: 0;
-            transform: translateY(15px);
-            transition: opacity 0.7s ease 0.4s, transform 0.7s ease 0.4s;
-        }
-        .slide-content .description {
-            opacity: 0;
-            transform: translateY(15px);
-            transition: opacity 0.7s ease 0.55s, transform 0.7s ease 0.55s;
-        }
-        .slide-content .cta {
-            opacity: 0;
-            transform: translateY(15px);
-            transition: opacity 0.7s ease 0.7s, transform 0.7s ease 0.7s;
-        }
-        .swiper-slide-active .slide-content .badge,
-        .swiper-slide-active .slide-content .heading,
-        .swiper-slide-active .slide-content .description,
-        .swiper-slide-active .slide-content .cta {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Ken Burns zoom effect */
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            transform: scale(1);
-            transition: transform 6s ease;
-        }
-        .swiper-slide-active .hero-bg {
-            transform: scale(1.06);
-        }
-    </style>
-
-    <div class="swiper-wrapper">
-
-        <!-- ===== Slide 1: Company Identity ===== -->
-        <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
-            
-            <!-- Background Image with Ken Burns -->
-            <div class="hero-bg" style="background-image: url('path/to/your-factory-image.jpg');"></div>
-            
-            <!-- Multi-layer overlay: gradient + vignette -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
-            <div class="absolute inset-0" style="background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.5) 100%);"></div>
-            
-            <!-- Accent line top -->
-            <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-80"></div>
-
-            <!-- Content: Center aligned -->
-            <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
-                
-                <!-- Badge -->
-                <div class="badge inline-flex items-center gap-2 mb-6">
-                    <span class="block w-8 h-[1px] bg-orange-400"></span>
-                    <span class="text-orange-400 text-[10px] font-bold uppercase tracking-[0.4em]">Established Since 2002</span>
-                    <span class="block w-8 h-[1px] bg-orange-400"></span>
-                </div>
-
-                <!-- Heading -->
-                <h1 class="heading text-4xl md:text-6xl font-black uppercase leading-tight mb-6 drop-shadow-lg">
-                    AIT Engineering<br>
-                    <span class="text-orange-400">&amp; Service</span> Co., Ltd.
-                </h1>
-
-                <!-- Divider -->
-                <div class="description flex items-center justify-center gap-4 mb-5">
-                    <span class="block flex-1 max-w-[80px] h-[1px] bg-white/20"></span>
-                    <p class="text-gray-200 text-sm md:text-base font-light leading-relaxed">
-                        ผู้นำด้านงานวิศวกรรมและบริการเครื่องมือวัดในประเทศไทย<br class="hidden md:block">
-                        มุ่งมั่นสู่ความเป็นเลิศด้วยมาตรฐานสากลและความซื่อสัตย์
-                    </p>
-                    <span class="block flex-1 max-w-[80px] h-[1px] bg-white/20"></span>
-                </div>
-
-                <!-- CTA Buttons -->
-                <div class="cta flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
-                    <a href="about.html" 
-                       class="bg-orange-500 hover:bg-orange-400 text-white px-8 py-3.5 rounded-full font-bold text-[11px] uppercase tracking-widest shadow-lg transition-all duration-300 hover:shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5">
-                        Learn More About Us
-                    </a>
-                    <a href="services.html" 
-                       class="border border-white/30 hover:border-white/60 text-white/80 hover:text-white px-8 py-3.5 rounded-full font-bold text-[11px] uppercase tracking-widest transition-all duration-300 hover:-translate-y-0.5">
-                        Our Services
-                    </a>
-                </div>
-            </div>
-
-            <!-- Bottom accent -->
-            <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-        </div>
-
-        <!-- ===== Slide 2: Achievement / Award ===== -->
-        <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
-            
-            <!-- Background Image -->
-            <div class="hero-bg" style="background-image: url('Cert.PTT.jpg');"></div>
-            
-            <!-- Overlay: darker + blur feel -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
-            <div class="absolute inset-0" style="background: radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.55) 100%);"></div>
-
-            <!-- Top accent -->
-            <div class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-orange-500 to-transparent opacity-80"></div>
-
-            <!-- Content: Center aligned -->
-            <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
-
-                <!-- Award Badge -->
-                <div class="badge inline-flex items-center justify-center gap-3 mb-6">
-                    <div class="w-9 h-9 rounded-full border border-orange-400/50 flex items-center justify-center">
-                        <svg class="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
+    <section class="swiper heroSwiper relative h-[600px] w-full overflow-hidden">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                <div class="hero-bg" style="background-image: url('path/to/your-factory-image.jpg');"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+                <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
+                    <div class="badge inline-flex items-center gap-2 mb-6">
+                        <span class="block w-8 h-[1px] bg-orange-400"></span>
+                        <span class="text-orange-400 text-[10px] font-bold uppercase tracking-[0.4em]">Established Since 2002</span>
+                        <span class="block w-8 h-[1px] bg-orange-400"></span>
                     </div>
-                    <span class="text-orange-400 text-[10px] font-bold uppercase tracking-[0.3em]">Awarded Achievement</span>
-                    <div class="w-9 h-9 rounded-full border border-orange-400/50 flex items-center justify-center">
-                        <svg class="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
+                    <h1 class="heading text-4xl md:text-6xl font-black uppercase leading-tight mb-6">
+                        AIT Engineering<br><span class="text-orange-400">& Service</span> Co., Ltd.
+                    </h1>
+                    <div class="cta flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+                        <a href="about.html" class="bg-orange-500 hover:bg-orange-400 text-white px-8 py-3.5 rounded-full font-bold text-[11px] uppercase tracking-widest transition-all">Learn More About Us</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Heading -->
-                <h2 class="heading text-3xl md:text-5xl font-black uppercase mb-5 leading-tight drop-shadow-lg">
-                    PTTGC Branch#6 Refinery<br>
-                    <span class="text-orange-400">Turnaround Project</span>
-                </h2>
-
-                <!-- Quote -->
-                <div class="description relative inline-block max-w-xl mx-auto mb-8">
-                    <span class="absolute -top-3 -left-2 text-orange-400/40 text-5xl font-serif leading-none">"</span>
-                    <p class="text-gray-200 text-sm md:text-base font-light italic leading-relaxed px-6">
-                        Awarded for Control Valve (Bettis) Overhaul and Inspection Service Package
-                    </p>
-                    <span class="absolute -bottom-5 -right-2 text-orange-400/40 text-5xl font-serif leading-none">"</span>
-                </div>
-
-                <!-- Divider -->
-                <div class="cta flex items-center justify-center gap-4 mt-10">
-                    <span class="block w-16 h-[1px] bg-orange-500/50"></span>
-                    <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-                    <span class="block w-16 h-[1px] bg-orange-500/50"></span>
+            <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                <div class="hero-bg" style="background-image: url('Cert.PTT.jpg');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
+                <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
+                    <div class="badge inline-flex items-center justify-center gap-3 mb-6">
+                        <span class="text-orange-400 text-[10px] font-bold uppercase tracking-[0.3em]">Awarded Achievement</span>
+                    </div>
+                    <h2 class="heading text-3xl md:text-5xl font-black uppercase mb-5 leading-tight">
+                        PTTGC Branch#6 Refinery<br><span class="text-orange-400">Turnaround Project</span>
+                    </h2>
                 </div>
             </div>
         </div>
 
-    </div>
+        <div class="swiper-button-prev hero-prev hidden md:flex"></div>
+        <div class="swiper-button-next hero-next hidden md:flex"></div>
+        <div class="swiper-pagination hero-pagination !bottom-8"></div>
+    </section>
 
-    <!-- Navigation Arrows -->
-    <div class="swiper-button-prev !left-6 md:!left-10 hidden md:flex"></div>
-    <div class="swiper-button-next !right-6 md:!right-10 hidden md:flex"></div>
-
-    <!-- Pagination -->
-    <div class="swiper-pagination !bottom-8"></div>
-</section>
-
-<!-- Logo Partner Section -->
-<section class="py-12 bg-white border-b border-gray-50">
-    <div class="container mx-auto px-4">
-        <div class="swiper logoSwiper">
-            <div class="swiper-wrapper items-center opacity-40">
-                <!-- ใส่ชื่อแบรนด์ที่อยู่ใน Portfolio ของบริษัทหนู -->
-                <div class="swiper-slide flex justify-center"><img src="logo/BETTIS.png" alt="BETTIS" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/ROSEMOUNT.png" alt="ROSEMOUNT" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/MICROMOTION.png" alt="MICROMOTION" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/EIM.png" alt="EIM" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/SHAFER.png" alt="SHAFER" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/HYTORK.png" alt="HYTORK" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/BETTIS.png" alt="BETTIS" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/ROSEMOUNT.png" alt="ROSEMOUNT" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/MICROMOTION.png" alt="MICROMOTION" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/EIM.png" alt="EIM" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/SHAFER.png" alt="SHAFER" class="h-10 object-contain grayscale"></div>
-                <div class="swiper-slide flex justify-center"><img src="logo/HYTORK.png" alt="HYTORK" class="h-10 object-contain grayscale"></div>
+    <section class="py-12 bg-white border-b border-gray-50 relative group">
+        <div class="container mx-auto px-12 relative">
+            <div class="swiper logoSwiper">
+                <div class="swiper-wrapper items-center">
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-01.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-02.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-03.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-04.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-05.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-06.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-07.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-08.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-09.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-10.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-12.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-14.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-15.png" class="h-10 object-contain"></div>
+                    <div class="swiper-slide flex justify-center"><img src="logo/logo-16.png" class="h-10 object-contain"></div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Custom Styles -->
+</div>
+
 <style>
+    /* Hero Swiper Specific */
+    .heroSwiper .hero-bg {
+        position: absolute; inset: 0; background-size: cover; background-position: center;
+        transform: scale(1); transition: transform 6s ease;
+    }
+    .heroSwiper .swiper-slide-active .hero-bg { transform: scale(1.06); }
+    
     .heroSwiper .swiper-pagination-bullet {
-        background: #fff !important;
-        width: 8px;
-        height: 8px;
-        opacity: 0.3;
-        transition: all 0.4s;
+        background: #fff !important; width: 8px; height: 8px; opacity: 0.3; transition: all 0.4s;
     }
     .heroSwiper .swiper-pagination-bullet-active {
-        opacity: 1;
-        width: 25px;
-        border-radius: 4px;
-        background: #ff6600 !important;
+        opacity: 1; width: 28px; border-radius: 4px; background: #f97316 !important;
+    }
+
+    .heroSwiper .swiper-button-prev, .heroSwiper .swiper-button-next {
+        width: 48px; height: 48px; background: rgba(255,255,255,0.1); backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; color: #fff;
+    }
+    .heroSwiper .swiper-button-prev::after, .heroSwiper .swiper-button-next::after { font-size: 14px; }
+
+    /* Animations */
+    .slide-content { opacity: 0; transform: translateY(30px); transition: all 0.9s ease 0.3s; }
+    .heroSwiper .swiper-slide-active .slide-content {
+        opacity: 1; transform: translateY(0);
     }
 </style>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    const heroSwiper = new Swiper('.heroSwiper', {
-        loop: true,
-        speed: 1200,
-        effect: 'fade',
-        fadeEffect: { crossFade: true },
-        autoplay: { delay: 5000, disableOnInteraction: false },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        pagination: { el: '.swiper-pagination', clickable: true },
-    });
+    document.addEventListener('DOMContentLoaded', function () {
+        // Hero Swiper Config
+        const heroSwiper = new Swiper('.heroSwiper', {
+            loop: true,
+            speed: 1200,
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            navigation: { 
+                nextEl: '.hero-next', 
+                prevEl: '.hero-prev' 
+            },
+            pagination: { 
+                el: '.hero-pagination', 
+                clickable: true 
+            },
+        });
 
-    const logoSwiper = new Swiper('.logoSwiper', {
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 50,
-        autoplay: { delay: 0, disableOnInteraction: false },
-        speed: 5000,
-        breakpoints: {
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-        },
+        // Logo Swiper Config
+        const logoSwiper = new Swiper('.logoSwiper', {
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 50,
+            grabCursor: true,
+            allowTouchMove: true,
+            speed: 4000,
+            autoplay: { 
+                delay: 0, 
+                disableOnInteraction: false 
+            },
+            navigation: {
+                nextEl: '.logo-next',
+                prevEl: '.logo-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 6 },
+            },
+        });
     });
 </script>
-
 
 <section class="py-16 bg-white relative overflow-hidden">
     <div class="absolute top-0 right-1/4 w-64 h-64 bg-blue-50/30 rounded-full blur-[80px] -z-10"></div>
@@ -553,129 +413,125 @@
 
 
     <section class="py-16 bg-white relative overflow-hidden">
-    <!-- แสงระเรื่อบางๆ นำสายตาจ้ะ -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-[#f0f9ff]/30 via-white to-white -z-10"></div>
 
     <div class="container mx-auto px-4">
-        <!-- หัวข้อขนาดเดิมแต่ดูซอฟต์ขึ้นจ้ะ -->
         <h2 class="text-[#1a4066] text-xl font-black mb-12 uppercase tracking-widest border-b border-gray-50 pb-5">
             Product Showcase
         </h2>
 
-        <!-- Grid 5 คอลัมน์ที่กะทัดรัดขึ้น -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             
-            <!-- Item 1 -->
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
-                <!-- ส่วนรูปภาพ: ปรับให้กะทัดรัด -->
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
                     <img src="p-0-1.jpg" alt="WT707" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
-                <!-- ส่วนเนื้อหา: ใช้ flex-1 เพื่อดันปุ่มลงด้านล่างจ้ะ -->
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#3b82f6] text-sm font-bold mb-2 px-2">WT707</h3>
+                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
+                        WT707
+                    </h3>
                     <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Instrument Series</p>
                     
-                    <!-- ตัวดัน (Spacer) -->
                     <div class="flex-1"></div> 
-                    
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        Read More
-                    </button>
+                    <a href="products.html">
+                        <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Item 2 -->
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
                     <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#3b82f6] text-sm font-bold mb-2 px-2 leading-tight">
+                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
                         Westlock K20 Electro-pneumatic Positioner
                     </h3>
                     <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
                     
                     <div class="flex-1"></div> 
-                    
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
                     <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        Read More
+                        View More
                     </button>
                 </div>
             </div>
 
-            <!-- Item 1 -->
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
-                <!-- ส่วนรูปภาพ: ปรับให้กะทัดรัด -->
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
                     <img src="p-0-1.jpg" alt="WT707" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
-                <!-- ส่วนเนื้อหา: ใช้ flex-1 เพื่อดันปุ่มลงด้านล่างจ้ะ -->
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#3b82f6] text-sm font-bold mb-2 px-2">WT707</h3>
+                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
+                        WT707
+                    </h3>
                     <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Instrument Series</p>
                     
-                    <!-- ตัวดัน (Spacer) -->
                     <div class="flex-1"></div> 
-                    
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        Read More
-                    </button>
+                    <a href="products.html">
+                        <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Item 2 -->
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
                     <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#3b82f6] text-sm font-bold mb-2 px-2 leading-tight">
+                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
                         Westlock K20 Electro-pneumatic Positioner
                     </h3>
                     <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
                     
                     <div class="flex-1"></div> 
-                    
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
                     <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        Read More
+                        View More
                     </button>
                 </div>
             </div>
 
-            <!-- Item 2 -->
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
                     <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#3b82f6] text-sm font-bold mb-2 px-2 leading-tight">
+                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
                         Westlock K20 Electro-pneumatic Positioner
                     </h3>
                     <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
                     
                     <div class="flex-1"></div> 
-                    
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
                     <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        Read More
+                        View More
                     </button>
                 </div>
             </div>
 
-            <!-- เปรมก๊อปโครงนี้วางต่อได้เลยจ้ะ ปุ่มจะเท่ากันเป๊ะทุกใบ -->
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="products.html" class="inline-flex items-center gap-4 px-10 py-4 bg-white border-2 border-[#1a4066] text-[#1a4066] rounded-full text-[11px] font-black uppercase tracking-[0.2em] hover:bg-[#1a4066] hover:text-white transition-all duration-300 group shadow-xl shadow-gray-100">
+                View All Products
+                <span class="transition-transform group-hover:translate-x-2">→</span>
+            </a>
         </div>
     </div>
 </section>
+
 
 <section class="py-16 bg-white relative overflow-hidden">
     <!-- แสงระเรื่อแบบจิ๋วๆ ไม่กวนสายตาจ้ะ -->
@@ -741,114 +597,130 @@
 </section>
 
 
-<section style="padding: 80px 40px 60px; border-bottom: 1px solid #f0f4f8; background: linear-gradient(to bottom, #f8fbff, #ffffff); text-align: center;">
-  <p style="font-size: 10px; font-weight: 800; letter-spacing: 0.3em; text-transform: uppercase; color: #ff6600; margin: 0 0 16px;">Since 2002</p>
-  <h1 style="margin: 0 0 12px; font-size: 36px; font-weight: 800; letter-spacing: -0.04em; color: #1a4066; text-transform: uppercase;">AIT Engineering & Service</h1>
-  <div style="width: 40px; hieght: 2px; background: #ff6600; margin: 20px auto;"></div>
-  <p style="margin: 0 auto; font-size: 15px; color: #7a8b9a; line-height: 1.8; max-w: 600px; font-weight: 300;">Thailand's trusted partner in field instruments, analyzers, and actuation technologies.</p>
-</section>
+<div style="margin: 0; padding: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #ffffff; color: #334e65;">
 
-<section style="padding: 60px 40px; background: #fff;">
-  <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: start;">
-
-    <div>
-      <div style="margin-bottom: 48px;">
-        <p style="font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #cbd5e0; margin: 0 0 24px;">Executive Message</p>
-        <p style="font-size: 20px; color: #1a4066; line-height: 1.6; margin: 0; font-weight: 300; font-style: italic;">
-          "We believe in <span style="font-weight: 800; color:#ff6600;">values of people</span>. We make customer trust us on quality work. We believe in integrity."
-        </p>
-      </div>
-      
-      <div style="background: #1a4066; border-radius: 24px; padding: 32px; color: #fff; position: relative; overflow: hidden;">
-        <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: rgba(255,102,0,0.1); border-radius: 50%;"></div>
-        <p style="font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #ff6600; margin: 0 0 12px;">Our Vision</p>
-        <p style="font-size: 18px; font-weight: 600; margin: 0; line-height: 1.4;">Creative Innovations for Sustainable Industry</p>
-      </div>
+  <section style="padding: 100px 60px 80px; background: linear-gradient(180deg, #f0f7fd 0%, #ffffff 100%); border-bottom: 1px solid #eef4f9;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #6b8cae; margin-bottom: 20px;">Established September 2002</p>
+      <h1 style="margin: 0 0 24px; font-size: clamp(32px, 4vw, 48px); font-weight: 700; color: #0f2d4a; letter-spacing: -0.03em; line-height: 1.1;">
+         About<br>AIT Engineering
+      </h1>
+      <p style="margin: 0; font-size: 16px; color: #5a7a96; line-height: 1.8; max-width: 600px; font-weight: 400;">
+        Thailand's trusted partner in field instruments, analyzers, and actuation technologies. Delivering quality work and integrity for over two decades.
+      </p>
     </div>
+  </section>
 
-    <div style="background: #fcfdfe; border: 1px solid #f1f5f9; border-radius: 32px; padding: 32px;">
-      <p style="font-size: 11px; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase; color: #1a4066; margin: 0 0 32px; text-align: center;">Core values</p>
-
-      <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-        <div style="color: #ff6600; font-weight: 800; font-size: 12px; padding-top: 2px;">01</div>
-        <p style="margin: 0; font-size: 13px; font-weight: 700; color: #334155;">Family culture</p>
-      </div>
-      <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-        <div style="color: #ff6600; font-weight: 800; font-size: 12px; padding-top: 2px;">02</div>
-        <p style="margin: 0; font-size: 13px; font-weight: 700; color: #334155;">Honesty, Integrity & Fairness</p>
-      </div>
-      <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-        <div style="color: #ff6600; font-weight: 800; font-size: 12px; padding-top: 2px;">03</div>
-        <p style="margin: 0; font-size: 13px; font-weight: 700; color: #334155;">Strive for Excellence</p>
-      </div>
-      <div style="display: flex; gap: 16px;">
-        <div style="color: #ff6600; font-weight: 800; font-size: 12px; padding-top: 2px;">04</div>
-        <p style="margin: 0; font-size: 13px; font-weight: 700; color: #334155;">Safety without Compromise</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="padding: 80px 40px; background: #fff; max-width: 1100px; margin: 0 auto;">
-  <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px;">
-    
-    <div>
-      <h2 style="font-size: 32px; font-weight: 800; color: #1a4066; margin: 0 0 20px; letter-spacing: -0.02em;">A Journey of Excellence</h2>
-      <p style="font-size: 14px; color: #64748b; line-height: 1.8; margin-bottom: 40px;">From our humble beginnings in 2002 to becoming a industry leader.</p>
-      
-      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px;">
-        <span style="font-size: 9px; font-weight: 700; padding: 4px 12px; background: #f1f5f9; color: #475569; border-radius: 100px; text-transform: uppercase;">Bettis</span>
-        <span style="font-size: 9px; font-weight: 700; padding: 4px 12px; background: #f1f5f9; color: #475569; border-radius: 100px; text-transform: uppercase;">Rosemount</span>
-        <span style="font-size: 9px; font-weight: 700; padding: 4px 12px; background: #f1f5f9; color: #475569; border-radius: 100px; text-transform: uppercase;">Shafer</span>
-      </div>
-
-      <div style="background: #f8fbff; padding: 24px; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+  <section style="padding: 80px 60px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 60px; align-items: start;">
+        
         <div>
-          <p style="margin: 0; font-size: 24px; font-weight: 800; color: #1a4066;">24+</p>
-          <p style="margin: 0; font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.1em;">Years of Success</p>
+          <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #a1b8ce; margin-bottom: 40px;">Company Profile</p>
+          
+          <div style="margin-bottom: 48px;">
+            <p style="font-size: 20px; color: #1a3a5a; line-height: 1.7; margin: 0 0 16px; font-style: italic; font-weight: 500; letter-spacing: -0.01em;">
+              "We believe in values of people. We make customer trust us on quality work. We believe in integrity."
+            </p>
+            <p style="font-size: 11px; color: #8aa8c4; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">— Management</p>
+          </div>
+
+          <div style="background: #f7fafd; border-radius: 12px; padding: 32px; border-left: 4px solid #4a87bf;">
+            <p style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #6b8cae; margin-bottom: 12px;">Vision</p>
+            <p style="font-size: 18px; font-weight: 600; color: #0f2d4a; margin: 0; line-height: 1.5; letter-spacing: -0.01em;">Creative Innovations for Sustainable Industry</p>
+          </div>
         </div>
-        <div style="width: 1px; height: 30px; background: #e2e8f0;"></div>
-        <div style="text-align: right;">
-          <p style="margin: 0; font-size: 24px; font-weight: 800; color: #1a4066;">100%</p>
-          <p style="margin: 0; font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.1em;">Integrity</p>
+
+        <div style="background: #ffffff; border: 1px solid #eef4f9; border-radius: 20px; padding: 44px; box-shadow: 0 15px 40px rgba(184, 212, 238, 0.15);">
+          <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #a1b8ce; margin-bottom: 32px;">Core Values</p>
+          
+          <div style="display: flex; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid #f0f6fc;">
+            <span style="font-size: 11px; font-weight: 800; color: #4a87bf; margin-top: 4px;">01</span>
+            <div><p style="margin: 0 0 4px; font-size: 15px; font-weight: 700; color: #0f2d4a; letter-spacing: -0.01em;">Family Culture</p><p style="margin: 0; font-size: 13px; color: #7a9ab4; line-height: 1.5; font-weight: 400;">A workplace built on trust and care.</p></div>
+          </div>
+          
+          <div style="display: flex; gap: 20px; padding: 24px 0; border-bottom: 1px solid #f0f6fc;">
+            <span style="font-size: 11px; font-weight: 800; color: #4a87bf; margin-top: 4px;">02</span>
+            <div><p style="margin: 0 0 4px; font-size: 15px; font-weight: 700; color: #0f2d4a; letter-spacing: -0.01em;">Honesty & Integrity</p><p style="margin: 0; font-size: 13px; color: #7a9ab4; line-height: 1.5; font-weight: 400;">Transparent in every action we take.</p></div>
+          </div>
+
+          <div style="display: flex; gap: 20px; padding-top: 24px;">
+            <span style="font-size: 11px; font-weight: 800; color: #4a87bf; margin-top: 4px;">03</span>
+            <div><p style="margin: 0 0 4px; font-size: 15px; font-weight: 700; color: #0f2d4a; letter-spacing: -0.01em;">Strive for Excellence</p><p style="margin: 0; font-size: 13px; color: #7a9ab4; line-height: 1.5; font-weight: 400;">Always learning, always raising the bar.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 100px 60px; background: #f9fbfc;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 80px;">
+        
+        <div>
+          <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #a1b8ce; margin-bottom: 32px;">Our History</p>
+          <h2 style="font-size: 32px; font-weight: 700; color: #0f2d4a; margin: 0 0 24px; letter-spacing: -0.02em;">Growing with Thailand's Industry</h2>
+          <p style="font-size: 15px; color: #5a7a96; line-height: 1.8; margin-bottom: 40px; font-weight: 400;">
+            AIT aims to be Thailand's leading instrument and service provider across oil & gas, petrochemical, and industrial sectors.
+          </p>
+
+          <p style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #6b8cae; margin-bottom: 16px;">Global Portfolio</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">ROSEMOUNT</span>
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">BETTIS</span>
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">EIM</span>
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">MICROMOTION</span>
+          </div>
+        </div>
+
+        <div style="padding-top: 10px;">
+          
+          <div style="display: flex; gap: 24px; margin-bottom: 40px;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 12px;">
+              <div style="width: 10px; height: 10px; border-radius: 50%; background: #4a87bf; flex-shrink: 0;"></div>
+              <div style="width: 1px; background: #dde6f0; flex: 1; margin-top: 10px;"></div>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px; font-size: 12px; font-weight: 800; color: #4a87bf;">2002 – 2005</p>
+              <p style="margin: 0; font-size: 14px; color: #334e65; font-weight: 450; line-height: 1.6;">AIT Engineering was established. Opened Banpong office near SCG.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 24px; margin-bottom: 40px;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 12px;">
+              <div style="width: 10px; height: 10px; border-radius: 50%; background: #a1b8ce; flex-shrink: 0;"></div>
+              <div style="width: 1px; background: #dde6f0; flex: 1; margin-top: 10px;"></div>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px; font-size: 12px; font-weight: 800; color: #a1b8ce;">2006 – 2012</p>
+              <p style="margin: 0; font-size: 14px; color: #334e65; font-weight: 450; line-height: 1.6;">Partnered with Emerson. New offices in Khon Kaen and Rayong.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 24px;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 12px;">
+              <div style="width: 10px; height: 10px; border-radius: 50%; background: #4a87bf; flex-shrink: 0;"></div>
+            </div>
+            <div>
+              <p style="margin: 0 0 6px; font-size: 12px; font-weight: 800; color: #4a87bf;">2015 – PRESENT</p>
+              <p style="margin: 0; font-size: 14px; color: #0f2d4a; font-weight: 600; line-height: 1.6;">Certified by Bureau Veritas. Ongoing global partnerships.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+  </section>
 
-    <div style="border-left: 1px solid #f1f5f9; padding-left: 40px;">
-      
-      <div style="margin-bottom: 32px; position: relative;">
-        <div style="position: absolute; left: -44px; top: 4px; width: 7px; height: 7px; background: #ff6600; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 1px #f1f5f9;"></div>
-        <p style="margin: 0 0 4px; font-size: 12px; font-weight: 800; color: #1a4066;">2002 – 2005</p>
-        <p style="margin: 0; font-size: 13px; color: #64748b; line-height: 1.6;">Founded and established the first office in Banpong near SCG.</p>
-      </div>
-
-      <div style="margin-bottom: 32px; position: relative;">
-        <div style="position: absolute; left: -44px; top: 4px; width: 7px; height: 7px; background: #cbd5e0; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 1px #f1f5f9;"></div>
-        <p style="margin: 0 0 4px; font-size: 12px; font-weight: 800; color: #1a4066;">2006 – 2012</p>
-        <p style="margin: 0; font-size: 13px; color: #64748b; line-height: 1.6;">Strategic partnership with Emerson. Expanded to Khon Kaen and Rayong.</p>
-      </div>
-
-      <div style="margin-bottom: 32px; position: relative;">
-        <div style="position: absolute; left: -44px; top: 4px; width: 7px; height: 7px; background: #ff6600; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 1px #f1f5f9;"></div>
-        <p style="margin: 0 0 4px; font-size: 12px; font-weight: 800; color: #1a4066;">2013 – 2015</p>
-        <p style="margin: 0; font-size: 13px; font-weight: 600; color: #334155; line-height: 1.6;">ISO Standards implementation & Bureau Veritas Certification. New workshop opened.</p>
-      </div>
-
-      <div style="position: relative;">
-        <div style="position: absolute; left: -44px; top: 4px; width: 7px; height: 7px; background: #cbd5e0; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 1px #f1f5f9;"></div>
-        <p style="margin: 0 0 4px; font-size: 12px; font-weight: 800; color: #1a4066;">2018 – 2020</p>
-        <p style="margin: 0; font-size: 13px; color: #64748b; line-height: 1.6;">Global contracts signed with PMT S.r.l and Airaghi S.r.l.</p>
-      </div>
-
+  <section style="padding: 50px 20px; text-align: center; background: #ffffff;">
+    <div style="max-width: 500px; margin: 0 auto;">
+      <a href="about.html" style="display: inline-block; font-size: 13px; font-weight: 700; color: #2d6da8; text-decoration: none; padding: 12px 32px; border: 1px solid #b8d4ee; border-radius: 8px; background: #f0f6fc; transition: all 0.3s ease; letter-spacing: 0.02em;">
+        Learn more about us
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<div style="text-align: center; padding: 40px 0 80px;">
-  <a href="about.html" style="display: inline-block; padding: 14px 32px; background: #1a4066; color: #fff; text-decoration: none; font-size: 11px; font-weight: 800; border-radius: 100px; letter-spacing: 0.1em; text-transform: uppercase; transition: transform 0.2s;">
-    Explore Full Story
-  </a>
 </div>
 
 

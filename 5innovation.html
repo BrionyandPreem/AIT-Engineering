@@ -136,11 +136,14 @@
                     <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
 
                     <li>
-                        <button onclick="toggleAccordion('products-sub')"
-                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
-                            Products & Services <i id="products-sub-icon"
-                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
-                        </button>
+                        <div class="w-full flex items-center justify-between hover:bg-gray-50 rounded-xl overflow-hidden group">
+                            <a href="products.html" class="flex-1 py-3 px-4 text-left font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                                Products & Services
+                            </a>
+                            <button onclick="toggleAccordion('products-sub')" class="py-3 px-4 border-l border-gray-100 hover:bg-blue-50 transition-colors">
+                                <i id="products-sub-icon" class="fa-solid fa-chevron-down text-[10px] transition-transform text-gray-400 group-hover:text-blue-500"></i>
+                            </button>
+                        </div>
                         <ul id="products-sub"
                             class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
                             <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
@@ -150,6 +153,9 @@
                             <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
                                     Systems</a></li>
                             <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                            <li><a href="5innovation.html" class="block py-2">Innovation</a></li>
+                            <li><a href="6service.html" class="block py-2">Service</a></li>
+                            <li><a href="7camille.html" class="block py-2">Camille Bauer</a></li>
                         </ul>
                     </li>
 
@@ -190,36 +196,57 @@
         </div>
     </section>
 
-    <footer class="bg-[#0a2540] py-10 text-white text-center">
-        <div class="container mx-auto px-4">
+    <footer class="bg-[#0a2540] py-16 text-white relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 blur-[100px] -z-10"></div>
 
-            <div class="mb-6">
-                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
-                <div class="flex justify-center space-x-3">
-                    <a href="#"
-                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-facebook-f text-xl"></i>
-                    </a>
-                    <a href="#"
-                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-linkedin-in text-xl"></i>
-                    </a>
-                    <a href="#"
-                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-youtube text-xl"></i>
-                    </a>
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col items-center">
+                
+                <div class="mb-8 opacity-90">
+                    <h2 class="text-xl font-black tracking-[0.2em] uppercase">AIT <span class="text-blue-400">Engineering</span></h2>
+                    <div class="h-1 w-12 bg-blue-500 mx-auto mt-2"></div>
+                </div>
+
+                <div class="mb-10">
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.facebook.com/aitengineeringandservice" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-blue-600 transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-facebook-f text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/aitengineeringandservice" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-[#0077b5] transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-linkedin-in text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                        <a href="http://www.youtube.com/@aitengineering2960" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-[#ff0000] transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-youtube text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="max-w-md text-center mb-8">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                        <a href="https://maps.app.goo.gl/EnBB3C9bpHQYT9RM9" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i> 75/76 Soi Romklao 1 , Saensaep ,<br>Minburi, Bangkok 10510 Thailand
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+
+                <div class="text-center space-y-4">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                        <a href="tel:+6629182060" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-phone text-blue-500"></i> +66 2 9182060
+                        </a>
+                        <span class="hidden md:block w-1.5 h-1.5 rounded-full bg-blue-500/30"></span>
+                        <a href="mailto:info@aitengineering.co.th" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-envelope text-blue-500"></i> info@aitengineering.co.th
+                        </a>
+                    </div>
+
+                    <p class="text-[9px] uppercase tracking-[0.3em] text-gray-500 pt-4">
+                        © 2026 <span class="text-gray-300">AIT Engineering & Service Co., Ltd.</span> All Rights Reserved.
+                    </p>
                 </div>
             </div>
-
-            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
-                <p>
-                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
-                </p>
-                <p class="text-sm font-medium">
-                    +66 2 9182060
-                </p>
-            </div>
-
         </div>
     </footer>
 

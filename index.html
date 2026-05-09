@@ -138,11 +138,14 @@
                     <li><a href="about.html" class="block py-3 px-4 hover:bg-gray-50 rounded-xl">About Us</a></li>
 
                     <li>
-                        <button onclick="toggleAccordion('products-sub')"
-                            class="w-full flex items-center justify-between py-3 px-4 hover:bg-gray-50 rounded-xl">
-                            Products & Services <i id="products-sub-icon"
-                                class="fa-solid fa-chevron-down text-[10px] transition-transform"></i>
-                        </button>
+                        <div class="w-full flex items-center justify-between hover:bg-gray-50 rounded-xl overflow-hidden group">
+                            <a href="products.html" class="flex-1 py-3 px-4 text-left font-medium text-gray-700 hover:text-blue-600 transition-colors">
+                                Products & Services
+                            </a>
+                            <button onclick="toggleAccordion('products-sub')" class="py-3 px-4 border-l border-gray-100 hover:bg-blue-50 transition-colors">
+                                <i id="products-sub-icon" class="fa-solid fa-chevron-down text-[10px] transition-transform text-gray-400 group-hover:text-blue-500"></i>
+                            </button>
+                        </div>
                         <ul id="products-sub"
                             class="hidden pl-8 pr-4 py-2 space-y-2 bg-gray-50 rounded-xl mt-1 font-medium normal-case text-gray-600">
                             <li><a href="1measurement.html" class="block py-2 border-b border-white">Measurement and
@@ -152,6 +155,9 @@
                             <li><a href="3machines.html" class="block py-2 border-b border-white">Machines and Process
                                     Systems</a></li>
                             <li><a href="4system.html" class="block py-2">System and Equipment</a></li>
+                            <li><a href="5innovation.html" class="block py-2">Innovation</a></li>
+                            <li><a href="6service.html" class="block py-2">Service</a></li>
+                            <li><a href="7camille.html" class="block py-2">Camille Bauer</a></li>
                         </ul>
                     </li>
 
@@ -170,7 +176,7 @@
     <section class="swiper heroSwiper relative h-[600px] w-full overflow-hidden">
         <div class="swiper-wrapper">
             <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
-                <div class="hero-bg" style="background-image: url('path/to/your-factory-image.jpg');"></div>
+                <div class="hero-bg" style="background-image: url('http://aitengineering.co.th/wp-content/uploads/2020/04/1.jpg');"></div>
                 <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
                 <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
                     <div class="badge inline-flex items-center gap-2 mb-6">
@@ -179,24 +185,59 @@
                         <span class="block w-8 h-[1px] bg-orange-400"></span>
                     </div>
                     <h1 class="heading text-4xl md:text-6xl font-black uppercase leading-tight mb-6">
-                        AIT Engineering<br><span class="text-orange-400">& Service</span> Co., Ltd.
+                        AIT Engineering<br><span class="text-orange-400">And Service</span>
                     </h1>
+                    <span class="text-white text-[10px] font-bold uppercase tracking-[0.4em]">Products & Services</span>
                     <div class="cta flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
                         <a href="about.html" class="bg-orange-500 hover:bg-orange-400 text-white px-8 py-3.5 rounded-full font-bold text-[11px] uppercase tracking-widest transition-all">Learn More About Us</a>
+                        <a href="contact.html" class="bg-green-600 hover:bg-green-400 text-white px-8 py-3.5 rounded-full font-bold text-[11px] uppercase tracking-widest transition-all">Contact Us</a>
                     </div>
                 </div>
             </div>
 
             <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
-                <div class="hero-bg" style="background-image: url('Cert.PTT.jpg');"></div>
+                <div class="hero-bg" style="background-image: url('http://aitengineering.co.th/wp-content/uploads/2020/04/industry-406905_1920.jpg');"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
                 <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
-                    <div class="badge inline-flex items-center justify-center gap-3 mb-6">
-                        <span class="text-orange-400 text-[10px] font-bold uppercase tracking-[0.3em]">Awarded Achievement</span>
-                    </div>
                     <h2 class="heading text-3xl md:text-5xl font-black uppercase mb-5 leading-tight">
-                        PTTGC Branch#6 Refinery<br><span class="text-orange-400">Turnaround Project</span>
+                        Main Industry
                     </h2>
+                    <div class="badge inline-flex items-center justify-center gap-3 mb-6">
+                        <span class="text-orange-400 text-[15px] font-bold uppercase tracking-[0.3em]">Pulp And Paper*Oil And Gas*Chemical*Power Plant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                <div class="hero-bg" style="background-image: url('http://aitengineering.co.th/wp-content/uploads/2020/04/2.jpg');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
+                <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
+                </div>
+            </div>
+
+            <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                <div class="hero-bg" style="background-image: url('http://aitengineering.co.th/wp-content/uploads/2020/04/3.jpg');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
+                <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
+                    <h2 class="heading text-3xl md:text-5xl font-black uppercase mb-5 leading-tight">
+                        Why AIT?
+                    </h2>
+                    <div class="badge inline-flex items-center justify-center gap-3 mb-6">
+                        <span class="text-orange-400 text-[15px] font-bold tracking-[0.2em]">We are a medium-sized company dedicated in our work and aim of providing excellent service after sales service.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative flex items-center justify-center overflow-hidden">
+                <div class="hero-bg" style="background-image: url('http://aitengineering.co.th/wp-content/uploads/2020/05/ISO.jpg');"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#0d2b45]/65 to-black/50"></div>
+                <div class="relative z-10 text-white text-center px-6 max-w-3xl mx-auto slide-content">
+                    <h2 class="heading text-3xl md:text-5xl font-black uppercase mb-5 leading-tight">
+                        ISO 9001
+                    </h2>
+                    <div class="badge inline-flex items-center justify-center gap-3 mb-6">
+                        <span class="text-orange-400 text-[15px] font-bold uppercase tracking-[0.2em]">Bureau Veritas Certification</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,18 +465,18 @@
             
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
-                    <img src="p-0-1.jpg" alt="WT707" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
+                    <img src="304_Manifold_Accessory.jpg" alt="304 Manifold Accessory" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
-                        WT707
+                    <h3 class="text-[#1a4066] text-[14px] font-black mb-2 px-2 tracking-widest leading-tight">
+                        304 Manifold Accessory
                     </h3>
-                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Instrument Series</p>
+                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Pressure and Level</p>
                     
                     <div class="flex-1"></div> 
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <a href="products.html">
+                    <a href="1measurement.html">
                         <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
                             View More
                         </button>
@@ -445,37 +486,18 @@
 
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
-                    <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
+                    <img src="Micro_Motion-G-Series.png" alt="Micro Motion G-Series" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
-                        Westlock K20 Electro-pneumatic Positioner
+                    <h3 class="text-[#1a4066] text-[14px] font-black mb-2 px-2 tracking-widest leading-tight">
+                        Micro Motion G-Series
                     </h3>
-                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
+                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Mass Flow</p>
                     
                     <div class="flex-1"></div> 
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        View More
-                    </button>
-                </div>
-            </div>
-
-            <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
-                <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
-                    <img src="p-0-1.jpg" alt="WT707" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
-                </div>
-                
-                <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
-                        WT707
-                    </h3>
-                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Instrument Series</p>
-                    
-                    <div class="flex-1"></div> 
-                    <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <a href="products.html">
+                    <a href="1measurement.html">
                         <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
                             View More
                         </button>
@@ -485,39 +507,64 @@
 
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
-                    <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
+                    <img src="Bettis_M2CP_Quarter-turn_Multi-turn_Electric_Valve_Actuator.png" alt="Bettis M2CP Quarter-turn Multi-turn Electric Valve Actuator" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
-                        Westlock K20 Electro-pneumatic Positioner
+                    <h3 class="text-[#1a4066] text-[12px] font-black mb-2 px-2 tracking-widest leading-tight">
+                        Bettis M2CP Quarter-turn Multi-turn Electric Valve Actuator
                     </h3>
-                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
+                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Actuators</p>
                     
                     <div class="flex-1"></div> 
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        View More
-                    </button>
+                    <a href="2valves.html">
+                        <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
             <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
                 <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
-                    <img src="p-0-2.jpg" alt="Westlock K20" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
+                    <img src="Westlock_K20_Electro-pneumatic_Positioner.jfif" alt="Westlock K20 Electro-pneumatic Positioner" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
                 </div>
                 
                 <div class="flex flex-col flex-1 text-center">
-                    <h3 class="text-[#1a4066] text-[11px] font-black mb-2 px-2 uppercase tracking-widest leading-tight">
+                    <h3 class="text-[#1a4066] text-[12px] font-black mb-2 px-2 tracking-widest leading-tight">
                         Westlock K20 Electro-pneumatic Positioner
                     </h3>
-                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valves & Control</p>
+                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Valve Accessories</p>
                     
                     <div class="flex-1"></div> 
                     <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
-                    <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
-                        View More
-                    </button>
+                    <a href="2valves.html">
+                        <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
+                            View More
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col group bg-white p-4 rounded-[2rem] border border-gray-50 hover:shadow-xl hover:shadow-blue-900/5 transition-all duration-500">
+                <div class="h-48 w-full flex items-center justify-center mb-6 bg-[#fcfcfd] rounded-2xl border border-gray-50 overflow-hidden">
+                    <img src="sineax_dm5_front-best-seller-600x600.jpg" alt="Sineax DM5" class="max-h-32 object-contain transition-transform duration-700 group-hover:scale-110">
+                </div>
+                
+                <div class="flex flex-col flex-1 text-center">
+                    <h3 class="text-[#1a4066] text-[15px] font-black mb-2 px-2 tracking-widest leading-tight">
+                        Sineax DM5
+                    </h3>
+                    <p class="text-gray-400 text-[10px] mb-4 uppercase tracking-tighter">Power Monitoring</p>
+                    
+                    <div class="flex-1"></div> 
+                    <div class="w-8 h-[1px] bg-blue-100 mx-auto mb-5"></div>
+                    <a href="7camille.html">
+                        <button class="w-full py-2.5 text-[10px] font-black uppercase tracking-widest text-white bg-[#3b82f6] rounded-xl shadow-md shadow-blue-500/10 hover:bg-[#1a4066] transition-all active:scale-95">
+                            View More
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -534,12 +581,10 @@
 
 
 <section class="py-16 bg-white relative overflow-hidden">
-    <!-- แสงระเรื่อแบบจิ๋วๆ ไม่กวนสายตาจ้ะ -->
     <div class="absolute top-10 right-1/4 w-64 h-64 bg-blue-50/30 rounded-full blur-[80px] -z-10"></div>
     <div class="absolute bottom-10 left-1/4 w-64 h-64 bg-orange-50/20 rounded-full blur-[80px] -z-10"></div>
 
     <div class="container mx-auto px-6">
-        <!-- หัวข้อแบบพอดีคำ -->
         <div class="mb-12 text-center md:text-left">
             <h2 class="text-[#1a4066] text-xl font-black uppercase tracking-[0.25em] inline-block">
                 Latest Videos
@@ -547,10 +592,8 @@
             </h2>
         </div>
 
-        <!-- ปรับ Grid ให้เล็กลงด้วย max-w-4xl -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             
-            <!-- Video 1 -->
             <div class="group">
                 <div class="relative aspect-video bg-gray-100 rounded-[1.8rem] overflow-hidden shadow-sm border border-gray-50 transition-all duration-500 hover:shadow-lg hover:-translate-y-1">
                     <iframe 
@@ -567,7 +610,6 @@
                 </div>
             </div>
 
-            <!-- Video 2 -->
             <div class="group">
                 <div class="relative aspect-video bg-gray-100 rounded-[1.8rem] overflow-hidden shadow-sm border border-gray-50 transition-all duration-500 hover:shadow-lg hover:-translate-y-1">
                     <iframe 
@@ -583,10 +625,8 @@
                     <p class="text-[#1a4066] font-bold text-[13px] tracking-wide">BETTIS CBA Reversal</p>
                 </div>
             </div>
-
         </div>
 
-        <!-- ปุ่มดูวิดีโอเพิ่มเติมแบบ Slim -->
         <div class="text-center mt-12">
             <a href="https://www.youtube.com/@aitengineering2960" target="_blank"
                 class="inline-flex items-center text-[#e11d48] px-8 py-2.5 rounded-full font-bold text-[10px] uppercase tracking-widest border border-red-100 hover:bg-red-50 transition-all">
@@ -669,8 +709,9 @@
           <div style="display: flex; flex-wrap: wrap; gap: 8px;">
             <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">ROSEMOUNT</span>
             <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">BETTIS</span>
-            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">EIM</span>
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">WESTLOCK</span>
             <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">MICROMOTION</span>
+            <span style="font-size: 10px; padding: 6px 14px; border-radius: 6px; color: #2d5f8a; background: #ffffff; border: 1px solid #eef4f9; font-weight: 700; letter-spacing: 0.05em;">ETC.</span>
           </div>
         </div>
 
@@ -726,17 +767,14 @@
 
     <section class="py-20 bg-gradient-to-b from-white via-[#f0fdf4]/50 to-white">
     <div class="container mx-auto px-4 text-center">
-        <!-- หัวข้อ: ใช้สีเขียวเดิมของหนูแต่เพิ่มความโปร่งจ้ะ -->
         <div class="mb-12">
             <h2 class="text-[#008000] text-3xl font-black uppercase tracking-tighter">Activities</h2>
             <p class="text-gray-400 text-[10px] uppercase tracking-[0.3em] mt-1">Our Proud Moments</p>
             <div class="w-12 h-1 bg-gradient-to-r from-green-400 to-emerald-200 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        <!-- Grid รูปภาพ: ปรับให้ดูเหมือนบอร์ดรูปถ่ายจ้ะ -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             
-            <!-- รูปที่ 1: เอียงซ้ายนิดๆ -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:-rotate-2 rotate-1">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A1.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
@@ -744,7 +782,6 @@
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 01</p>
             </div>
 
-            <!-- รูปที่ 2: เอียงขวานิดๆ -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:rotate-2 -rotate-1">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A2.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
@@ -752,7 +789,6 @@
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 02</p>
             </div>
 
-            <!-- รูปที่ 3 -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:-rotate-1 rotate-2">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A3.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
@@ -760,7 +796,6 @@
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 03</p>
             </div>
 
-            <!-- รูปที่ 4 -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:rotate-1 -rotate-2">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A4.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
@@ -768,7 +803,6 @@
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 04</p>
             </div>
 
-            <!-- รูปที่ 5 -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:-rotate-2 rotate-1">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A5.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
@@ -776,17 +810,14 @@
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 05</p>
             </div>
 
-            <!-- รูปที่ 6 -->
             <div class="group relative bg-white p-3 shadow-md hover:shadow-xl transition-all duration-500 hover:rotate-2 -rotate-1">
                 <div class="overflow-hidden bg-gray-100 aspect-square">
                     <img src="A6.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 </div>
                 <p class="mt-3 text-[10px] text-gray-400 font-medium uppercase tracking-widest italic">AIT Activity 06</p>
             </div>
-
         </div>
 
-        <!-- ปุ่มดูรูปเพิ่มเติมแบบคลีนๆ จ้ะ -->
         <div class="mt-16">
             <button class="text-[#008000] text-xs font-bold uppercase tracking-[0.2em] border-b-2 border-green-100 pb-1 hover:border-[#008000] transition-all">
                 View All Memories
@@ -799,7 +830,6 @@
     <section class="py-20 bg-gradient-to-b from-white via-[#f0f9ff]/30 to-[#fff7ed]/20">
     <div class="container mx-auto px-4 text-center">
 
-        <!-- หัวข้อ: ใช้เส้นประที่ดูนุ่มนวลขึ้นและสีเขียวที่ดูแพงจ้ะ -->
         <div class="relative flex py-5 items-center mb-16 max-w-5xl mx-auto">
             <div class="flex-grow border-t border-gray-200"></div>
             <span class="flex-shrink mx-6 text-[#1a5d2c] text-3xl font-black uppercase tracking-[0.2em] opacity-90">
@@ -808,7 +838,6 @@
             <div class="flex-grow border-t border-gray-200"></div>
         </div>
 
-        <!-- ชื่อโครงการ: ปรับฟอนต์ให้ดูโปร่งและทันสมัยขึ้นจ้ะ -->
         <div class="mb-12">
             <p class="text-orange-500 text-[10px] font-black uppercase tracking-[0.4em] mb-2">Project Success</p>
             <h3 class="text-[#1a4066] text-sm md:text-base font-bold uppercase tracking-wider max-w-2xl mx-auto leading-relaxed">
@@ -816,10 +845,8 @@
             </h3>
         </div>
 
-        <!-- ใบประกาศ: ใส่กรอบแบบมีมิติและเงาฟุ้งๆ (Soft Glow) -->
         <div class="flex justify-center">
             <div class="relative group max-w-4xl w-full px-4">
-                <!-- แสงสีส้มระเรื่อหลังใบประกาศ เพิ่มความ "วิ้ง" แบบมนุษย์ตั้งใจจ้ะ -->
                 <div class="absolute -inset-4 bg-orange-100/30 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                 
                 <div class="relative bg-white p-4 shadow-[0_20px_50px_rgba(0,0,0,0.08)] rounded-xl border border-white transition-all duration-700 group-hover:shadow-[0_30px_60px_rgba(251,146,60,0.15)] group-hover:-translate-y-2">
@@ -827,7 +854,6 @@
                         class="w-full h-auto rounded-lg border border-gray-50 shadow-inner">
                 </div>
 
-                <!-- ข้อความรางวัล: ปรับให้อ่านง่ายและดู Luxury นิดๆ -->
                 <div class="mt-12 text-center">
                     <div class="inline-block w-8 h-[2px] bg-gradient-to-r from-orange-500 to-transparent mb-6"></div>
                     <p class="text-gray-500 text-base italic font-medium leading-relaxed max-w-xl mx-auto">
@@ -844,11 +870,9 @@
 
 
     <section class="py-20 bg-[#fcfcfd] relative overflow-hidden">
-    <!-- แสงระเรื่อสีฟ้าด้านบนตามสไตล์ที่เปรมชอบจ้ะ -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-sky-100/50 blur-[100px] rounded-full"></div>
 
     <div class="container mx-auto px-4 relative z-10">
-        <!-- หัวข้อ Get In Touch แบบไล่สีสวยๆ -->
         <div class="text-center mb-16">
             <h1 class="text-[#345e82] text-5xl md:text-6xl font-black uppercase tracking-[0.15em] mb-4">
                 GET IN <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-orange-500">TOUCH</span>
@@ -858,7 +882,6 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-7xl mx-auto">
             
-            <!-- ฝั่งซ้าย: ข้อมูลสำนักงานใหญ่ (Bangkok HQ) -->
             <div class="lg:col-span-5 bg-white p-10 rounded-[2.5rem] border border-gray-100 shadow-[0_15px_40px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all hover:shadow-xl">
                 <div>
                     <h2 class="text-3xl font-bold text-[#345e82] mb-1">Bangkok</h2>
@@ -882,7 +905,6 @@
                     </div>
                 </div>
 
-                <!-- แผนที่แบบย่อพอสวยงาม -->
                 <div class="mt-10 rounded-[2rem] overflow-hidden border border-gray-50 h-[250px] shadow-md">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.604911129983!2d100.7428983!3d13.8026746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d644570dd7a27%3A0x10a032f367b43a6!2sAIT%20Engineering%20and%20Service%20Co.%2CLtd!5e0!3m2!1sth!2sth!4v1775469240735!5m2!1sth!2sth"
@@ -891,7 +913,6 @@
                 </div>
             </div>
 
-            <!-- ฝั่งขวา: ฟอร์มส่งข้อความแบบ Glassmorphism -->
             <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
                 <h3 class="text-2xl font-bold text-gray-800 mb-8">Send a message</h3>
 
@@ -919,7 +940,6 @@
             </div>
         </div>
 
-        <!-- ปุ่ม Link ไปหน้า Contact หลัก (ที่มีครบทุกสาขา) -->
         <div class="text-center mt-12">
             <a href="contact.html" class="text-gray-400 hover:text-[#345e82] text-xs font-bold uppercase tracking-widest transition-colors border-b border-gray-200 pb-1">
                 View all branches & locations
@@ -928,36 +948,57 @@
     </div>
 </section>
 
-    <footer class="bg-[#0a2540] py-10 text-white text-center">
-        <div class="container mx-auto px-4">
+    <footer class="bg-[#0a2540] py-16 text-white relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 blur-[100px] -z-10"></div>
 
-            <div class="mb-6">
-                <h3 class="text-xs font-bold uppercase tracking-widest mb-4">FIND US ON</h3>
-                <div class="flex justify-center space-x-3">
-                    <a href="#"
-                        class="bg-[#3b5998] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-facebook-f text-xl"></i>
-                    </a>
-                    <a href="#"
-                        class="bg-[#0077b5] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-linkedin-in text-xl"></i>
-                    </a>
-                    <a href="#"
-                        class="bg-[#cc181e] w-10 h-10 flex items-center justify-center rounded hover:opacity-80 transition">
-                        <i class="fa-brands fa-youtube text-xl"></i>
-                    </a>
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col items-center">
+                
+                <div class="mb-8 opacity-90">
+                    <h2 class="text-xl font-black tracking-[0.2em] uppercase">AIT <span class="text-blue-400">Engineering</span></h2>
+                    <div class="h-1 w-12 bg-blue-500 mx-auto mt-2"></div>
+                </div>
+
+                <div class="mb-10">
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.facebook.com/aitengineeringandservice" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-blue-600 transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-facebook-f text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/aitengineeringandservice" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-[#0077b5] transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-linkedin-in text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                        <a href="http://www.youtube.com/@aitengineering2960" target="_blank" class="group relative w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-2xl hover:bg-[#ff0000] transition-all duration-500 hover:-translate-y-2 shadow-xl">
+                            <i class="fa-brands fa-youtube text-lg opacity-70 group-hover:opacity-100"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="max-w-md text-center mb-8">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                        <a href="https://maps.app.goo.gl/EnBB3C9bpHQYT9RM9" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-location-dot text-blue-500 mt-1"></i> 75/76 Soi Romklao 1 , Saensaep ,<br>Minburi, Bangkok 10510 Thailand
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+
+                <div class="text-center space-y-4">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                        <a href="tel:+6629182060" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-phone text-blue-500"></i> +66 2 9182060
+                        </a>
+                        <span class="hidden md:block w-1.5 h-1.5 rounded-full bg-blue-500/30"></span>
+                        <a href="mailto:info@aitengineering.co.th" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                            <i class="fa-solid fa-envelope text-blue-500"></i> info@aitengineering.co.th
+                        </a>
+                    </div>
+
+                    <p class="text-[9px] uppercase tracking-[0.3em] text-gray-500 pt-4">
+                        © 2026 <span class="text-gray-300">AIT Engineering & Service Co., Ltd.</span> All Rights Reserved.
+                    </p>
                 </div>
             </div>
-
-            <div class="text-[10px] uppercase tracking-tighter text-gray-300 space-y-1">
-                <p>
-                    WEBSITE BY <span class="font-bold">AITENGINEERING.CO.TH</span> CONTACT
-                </p>
-                <p class="text-sm font-medium">
-                    +66 2 9182060
-                </p>
-            </div>
-
         </div>
     </footer>
 

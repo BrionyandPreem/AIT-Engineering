@@ -183,7 +183,6 @@
                     </button>
                 </a>
 
-                <!-- ทุกปุ่มสาขาเริ่มต้นด้วยสีขาวคลีนๆ เหมือนกันหมดจ้ะ -->
                 <button onclick="showBranch('khonkaen', this)" 
                     class="branch-btn bg-white text-gray-400 px-8 py-3 text-xs font-bold uppercase rounded-2xl border border-gray-100 shadow-sm transition-all">
                     Khonkaen
@@ -199,7 +198,6 @@
                     Rayong
                 </button>
 
-                <!-- ปุ่ม Bangkok (HQ) ตั้ง id ไว้เพื่อให้สคริปต์หาเจอตอนโหลดหน้าแรกจ้ะ -->
                 <button id="default-btn" onclick="showBranch('bangkok', this)"
                     class="branch-btn bg-[#ff6600] text-white px-10 py-3 text-xs font-bold uppercase rounded-2xl shadow-[0_10px_20px_rgba(255,102,0,0.2)] transition-all">
                     Bangkok (HQ)
@@ -253,22 +251,22 @@
                     <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
                         <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
 
-                        <form id="contactForm" class="space-y-8">
+                        <form id="contactForm" action="send-email.php" method="POST" class="space-y-8">
                             <div class="space-y-6">
                                 <div class="space-y-2">
                                     <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
-                                    <input type="text" id="name" placeholder="Your Name" required
+                                    <input type="text" id="name" name="fullname" placeholder="Your Name" required
                                         class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
                                 </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div class="space-y-2">
                                         <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Email</label>
-                                        <input type="email" id="email" placeholder="example@gmail.com" required
+                                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required
                                             class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
                                     </div>
                                     <div class="space-y-2">
                                         <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Tel.</label>
-                                        <input type="tel" id="tel" placeholder="Your Phone Number" required
+                                        <input type="tel" id="tel" name="tel" placeholder="Your Phone Number" required
                                             class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-sky-500/30 focus:ring-4 focus:ring-sky-500/5 transition-all">
                                     </div>
                                 </div>
@@ -276,7 +274,7 @@
 
                             <div class="space-y-2">
                                 <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Message</label>
-                                <textarea id="message" rows="5" placeholder="How can we support your business?" required
+                                <textarea id="message" name="message" rows="5" placeholder="How can we support your business?" required
                                     class="w-full bg-white border border-gray-100 px-5 py-4 rounded-2xl text-gray-700 outline-none focus:border-orange-500/30 focus:ring-4 focus:ring-orange-500/5 transition-all resize-none"></textarea>
                             </div>
 
@@ -284,11 +282,11 @@
                                 <p class="text-[10px] font-bold uppercase text-gray-400 mb-6 tracking-widest">Send to</p>
                                 <div class="flex flex-wrap gap-8">
                                     <label class="flex items-center cursor-pointer group">
-                                        <input type="radio" name="dept" value="Sales" class="w-4 h-4 mr-3 accent-orange-500" required>
+                                        <input type="radio" name="dept" value="info@aitengineering.co.th" class="w-4 h-4 mr-3 accent-orange-500" required checked>
                                         <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">info@aitengineering.co.th</span>
                                     </label>
                                     <label class="flex items-center cursor-pointer group">
-                                        <input type="radio" name="dept" value="Support" class="w-4 h-4 mr-3 accent-orange-500">
+                                        <input type="radio" name="dept" value="support@aitengineering.co.th" class="w-4 h-4 mr-3 accent-orange-500">
                                         <span class="text-gray-500 group-hover:text-sky-600 transition-colors font-light">support@aitengineering.co.th</span>
                                     </label>
                                 </div>
@@ -675,21 +673,16 @@
         }
 
         window.onload = function() {
-            // 1. ดึงค่าจาก URL มาดูว่ามี ?branch=... ไหม
             const urlParams = new URLSearchParams(window.location.search);
             const branchName = urlParams.get('branch');
 
             if (branchName) {
-                // 2. หาปุ่มที่มีฟังก์ชัน showBranch และมีชื่อสาขาตรงกับใน URL
-                // เราจะหาปุ่มที่มีคำสั่ง onclick ที่มีชื่อสาขานั้นอยู่จ้ะ
                 const targetBtn = document.querySelector(`button[onclick*="'${branchName}'"]`);
                 
                 if (targetBtn) {
-                    // 3. สั่งคลิกปุ่มนั้นทันที!
                     targetBtn.click();
                 }
             } else {
-                // ถ้าไม่มีระบุสาขามา ให้กดปุ่ม Default (Bangkok) ตามปกติจ้ะ
                 const defaultBtn = document.getElementById('default-btn');
                 if (defaultBtn) defaultBtn.click();
             }
@@ -697,14 +690,12 @@
 
         (function() {
             const urlParams = new URLSearchParams(window.location.search);
-            const branchName = urlParams.get('branch') || 'bangkok'; // ถ้าไม่มีสาขาให้เลือก bangkok
+            const branchName = urlParams.get('branch') || 'bangkok';
 
-            // ใช้ฟังก์ชันเดิมที่เปรมมี แต่สั่งรันทันที
             document.addEventListener("DOMContentLoaded", function() {
                 const targetBtn = document.querySelector(`button[onclick*="'${branchName}'"]`) || document.getElementById('default-btn');
                 
                 if (targetBtn) {
-                    // สั่งรันฟังก์ชัน showBranch ทันทีโดยไม่ผ่านการคลิกแบบจำลอง (ป้องกันการกระตุก)
                     showBranch(branchName, targetBtn);
                 }
             });

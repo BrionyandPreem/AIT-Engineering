@@ -3540,6 +3540,24 @@
     "categoryTag": ["camille-bauer","power-quality"],
     "img": "imgpro7/pq5000mob-front_image-1-600x600.jpg",
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "Turboblower",
+    "sku": "turboblower",
+    "page": "products",
+    "category": "Machines And Processes Systems, China Zhenxin Turbo Machines",
+    "categoryTag": ["machines-and-processes-systems","china-zhenxin-turbo-machines"],
+    "img": "imgpro3/turboblower.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "Turboblower_Single_Stage",
+    "sku": "turboblower-single-stage",
+    "page": "products",
+    "category": "Machines And Processes Systems, China Zhenxin Turbo Machines",
+    "categoryTag": ["machines-and-processes-systems","china-zhenxin-turbo-machines"],
+    "img": "imgpro3/Turboblower_Single_Stage.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   }
-  
+
 ]

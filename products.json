@@ -2593,8 +2593,231 @@
     "img": "imgpro7/pq5000mob-front_image-1-600x600.jpg",
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
-
-
+  {
+    "name": "MOD800",
+    "sku": "MOD800",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD800.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MOD600",
+    "sku": "MOD600",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD600.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MOD580",
+    "sku": "MOD580",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD580.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MOD880",
+    "sku": "MOD880",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD880.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MOD520",
+    "sku": "MOD520",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD520.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MOD800",
+    "sku": "MOD800",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD800.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD30 3.3kV:2.5-4MVA",
+    "sku": "HD30-3.3kV:2.5-4MVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD30_3.3kV-2.5-4MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD30 3.3kV:7.5MVA",
+    "sku": "HD30-3.3kV:7.5MVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD30_3.3kV-7.5MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD33 3.3kV:10-12MVA",
+    "sku": "HD33-3.3kV:10-12MVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD33_3.3kV-10-12MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD33 3.3kV:30MVA",
+    "sku": "HD33-3.3kV:30MVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD33_3.3kV-30MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD90P 6.6KV/6KV 0.8-5MVA",
+    "sku": "HD90P-6.6KV/6KV-0.8-5MVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD90P_6.6KV-6KV_0.8-5MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD9XS-AW 10KV:250-2500KVA",
+    "sku": "HD9XS-AW-10KV-250-2500KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD9XS-AW_10KV-250-2500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+   {
+    "name": "HD9XS-AW 10KV:2800-4500KVA",
+    "sku": "HD9XS-AW-10KV-2800-4500KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD9XS-AW_10KV-2800-4500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "315-710KVA",
+    "sku": "315-710KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/315-710KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "800-1600KVA",
+    "sku": "800-1600KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/800-1600KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1800-2800KVA",
+    "sku": "1800-2800KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1800-2800KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "3150-4000KVA",
+    "sku": "3150-4000KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/3150-4000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "4500-8000KVA",
+    "sku": "4500-8000KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/4500-8000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "250-1000KVA",
+    "sku": "250-1000KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/250-1000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1120-1250KVA",
+    "sku": "1120-1250KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1120-1250KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1400-2500KVA",
+    "sku": "1400-2500KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1400-2500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "2800-4500KVA",
+    "sku": "2800-4500KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/2800-4500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "5000-7000KVA",
+    "sku": "5000-7000KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/5000-7000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "8000-13750KVA",
+    "sku": "8000-13750KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/8000-13750KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD9XS-R:5000-7000KVA",
+    "sku": "HD9XS-R:5000-7000KVA",
+    "page": "drive",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD9XS-R-5000-7000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
 
 
 

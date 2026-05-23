@@ -24,6 +24,8 @@ if (page.includes("1measurement.html") || page === "index.html") {
     currentPageName = "service";
 } else if (page.includes("7camille.html")) {
     currentPageName = "camille";
+} else if (page.includes("8drive.html")) {
+    currentPageName = "drive";
 }
 
 async function loadProducts() {

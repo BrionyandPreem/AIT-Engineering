@@ -2593,9 +2593,11 @@
     "img": "imgpro7/pq5000mob-front_image-1-600x600.jpg",
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
+
+
   {
-    "name": "MOD800",
-    "sku": "MOD800",
+    "name": "MD800",
+    "sku": "MD800",
     "page": "drive",
     "category": "Drive And Inverter,Inovance",
     "categoryTag": ["drive-and-inverter","inovance"],
@@ -2603,8 +2605,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "MOD600",
-    "sku": "MOD600",
+    "name": "MD600",
+    "sku": "MD600",
     "page": "drive",
     "category": "Drive And Inverter,Inovance",
     "categoryTag": ["drive-and-inverter","inovance"],
@@ -2612,40 +2614,31 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "MOD580",
-    "sku": "MOD580",
+    "name": "MD580",
+    "sku": "MD580",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Low Voltage(LV)",
+    "categoryTag": ["drive-and-inverter","inovance","low-voltage-lv"],
     "img": "imgpro8/MD580.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The MD580 series AC drive is a low-voltage high-performance engineering AC drive used to control three-phase AC permanent magnet synchronous motors and asynchronous motors. With the high-performance vector control technology, this AC drive can output high torque at low speeds, demonstrating excellent dynamics and overload capacity. It supports user programming, background monitoring, communication bus functions, and various encoders, ensuring stability and rich functionality. It is applied in many industries such as metallurgy, non-ferrous metals, building materials, papermaking, chemicals, and municipal services.</p>"
   },
   {
-    "name": "MOD880",
-    "sku": "MOD880",
+    "name": "MD880",
+    "sku": "MD880",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Specialized",
+    "categoryTag": ["drive-and-inverter","inovance","specialized"],
     "img": "imgpro8/MD880.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The MD880 series high-performance engineering AC drive represents Inovances technology platform for high-end variable-frequency speed regulation products. Available in single-drive and multi-drive topologies and positioned for high-end drive applications, this series offers high performance and reliability. Covering the 400 V and 690 V voltage classes and offering a power range from 3.7 kW to 5,600 kW, this series has become a new industry benchmark for AC drives in China in terms of module structure, power density, response, and accuracy. These AC drives can be widely used in metallurgy, papermaking, and other continuous production lines as well as large equipment such as ships, drilling rigs, shield machines, and port quay cranes.</p>"
   },
   {
-    "name": "MOD520",
-    "sku": "MOD520",
+    "name": "MD520",
+    "sku": "MD520",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Low Voltage(LV)",
+    "categoryTag": ["drive-and-inverter","inovance","low-voltage-lv"],
     "img": "imgpro8/MD520.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
-  },
-  {
-    "name": "MOD800",
-    "sku": "MOD800",
-    "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
-    "img": "imgpro8/MD800.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The MD520 series AC drive is a general-purpose high-performance current vector AC drive. It is used to control and adjust the speed and torque of three-phase AC asynchronous motors and three-phase AC permanent magnet motors. It is applicable to various automated production equipment and industries such as textiles, papermaking, wire drawing, machine tools, packaging, food, fans, and water pumps.</p>"
   },
   {
     "name": "HD30 3.3kV:2.5-4MVA",
@@ -2696,19 +2689,19 @@
     "name": "HD9XS-AW 10KV:250-2500KVA",
     "sku": "HD9XS-AW-10KV-250-2500KVA",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
     "img": "imgpro8/HD9XS-AW_10KV-250-2500KVA.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
   },
    {
     "name": "HD9XS-AW 10KV:2800-4500KVA",
     "sku": "HD9XS-AW-10KV-2800-4500KVA",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
     "img": "imgpro8/HD9XS-AW_10KV-2800-4500KVA.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
   },
   {
     "name": "315-710KVA",
@@ -2813,10 +2806,10 @@
     "name": "HD9XS-R:5000-7000KVA",
     "sku": "HD9XS-R:5000-7000KVA",
     "page": "drive",
-    "category": "Drive And Inverter,Inovance",
-    "categoryTag": ["drive-and-inverter","inovance"],
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
     "img": "imgpro8/HD9XS-R-5000-7000KVA.jpg",
-    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
   },
 
 
@@ -3781,6 +3774,222 @@
     "categoryTag": ["machines-and-processes-systems","china-zhenxin-turbo-machines"],
     "img": "imgpro3/Turboblower_Single_Stage.jpg",
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MD800",
+    "sku": "MD800",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD800.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MD600",
+    "sku": "MD600",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/MD600.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "MD580",
+    "sku": "MD580",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Low Voltage(LV)",
+    "categoryTag": ["drive-and-inverter","inovance","low-voltage-lv"],
+    "img": "imgpro8/MD580.jpg",
+    "desc": "<p>The MD580 series AC drive is a low-voltage high-performance engineering AC drive used to control three-phase AC permanent magnet synchronous motors and asynchronous motors. With the high-performance vector control technology, this AC drive can output high torque at low speeds, demonstrating excellent dynamics and overload capacity. It supports user programming, background monitoring, communication bus functions, and various encoders, ensuring stability and rich functionality. It is applied in many industries such as metallurgy, non-ferrous metals, building materials, papermaking, chemicals, and municipal services.</p>"
+  },
+  {
+    "name": "MD880",
+    "sku": "MD880",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Specialized",
+    "categoryTag": ["drive-and-inverter","inovance","specialized"],
+    "img": "imgpro8/MD880.jpg",
+    "desc": "<p>The MD880 series high-performance engineering AC drive represents Inovances technology platform for high-end variable-frequency speed regulation products. Available in single-drive and multi-drive topologies and positioned for high-end drive applications, this series offers high performance and reliability. Covering the 400 V and 690 V voltage classes and offering a power range from 3.7 kW to 5,600 kW, this series has become a new industry benchmark for AC drives in China in terms of module structure, power density, response, and accuracy. These AC drives can be widely used in metallurgy, papermaking, and other continuous production lines as well as large equipment such as ships, drilling rigs, shield machines, and port quay cranes.</p>"
+  },
+  {
+    "name": "MD520",
+    "sku": "MD520",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Low Voltage(LV)",
+    "categoryTag": ["drive-and-inverter","inovance","low-voltage-lv"],
+    "img": "imgpro8/MD520.jpg",
+    "desc": "<p>The MD520 series AC drive is a general-purpose high-performance current vector AC drive. It is used to control and adjust the speed and torque of three-phase AC asynchronous motors and three-phase AC permanent magnet motors. It is applicable to various automated production equipment and industries such as textiles, papermaking, wire drawing, machine tools, packaging, food, fans, and water pumps.</p>"
+  },
+  {
+    "name": "HD30 3.3kV:2.5-4MVA",
+    "sku": "HD30-3.3kV:2.5-4MVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD30_3.3kV-2.5-4MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD30 3.3kV:7.5MVA",
+    "sku": "HD30-3.3kV:7.5MVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD30_3.3kV-7.5MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD33 3.3kV:10-12MVA",
+    "sku": "HD33-3.3kV:10-12MVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD33_3.3kV-10-12MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD33 3.3kV:30MVA",
+    "sku": "HD33-3.3kV:30MVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD33_3.3kV-30MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD90P 6.6KV/6KV 0.8-5MVA",
+    "sku": "HD90P-6.6KV/6KV-0.8-5MVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/HD90P_6.6KV-6KV_0.8-5MVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD9XS-AW 10KV:250-2500KVA",
+    "sku": "HD9XS-AW-10KV-250-2500KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
+    "img": "imgpro8/HD9XS-AW_10KV-250-2500KVA.jpg",
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
+  },
+   {
+    "name": "HD9XS-AW 10KV:2800-4500KVA",
+    "sku": "HD9XS-AW-10KV-2800-4500KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
+    "img": "imgpro8/HD9XS-AW_10KV-2800-4500KVA.jpg",
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
+  },
+  {
+    "name": "315-710KVA",
+    "sku": "315-710KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/315-710KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "800-1600KVA",
+    "sku": "800-1600KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/800-1600KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1800-2800KVA",
+    "sku": "1800-2800KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1800-2800KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "3150-4000KVA",
+    "sku": "3150-4000KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/3150-4000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "4500-8000KVA",
+    "sku": "4500-8000KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/4500-8000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "250-1000KVA",
+    "sku": "250-1000KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/250-1000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1120-1250KVA",
+    "sku": "1120-1250KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1120-1250KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "1400-2500KVA",
+    "sku": "1400-2500KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/1400-2500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "2800-4500KVA",
+    "sku": "2800-4500KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/2800-4500KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "5000-7000KVA",
+    "sku": "5000-7000KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/5000-7000KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "8000-13750KVA",
+    "sku": "8000-13750KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance",
+    "categoryTag": ["drive-and-inverter","inovance"],
+    "img": "imgpro8/8000-13750KVA.jpg",
+    "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
+  },
+  {
+    "name": "HD9XS-R:5000-7000KVA",
+    "sku": "HD9XS-R:5000-7000KVA",
+    "page": "products",
+    "category": "Drive And Inverter,Inovance,Medium Voltage(MV)",
+    "categoryTag": ["drive-and-inverter","inovance","medium-voltage-mv"],
+    "img": "imgpro8/HD9XS-R-5000-7000KVA.jpg",
+    "desc": "<p>The HD90XS series medium-voltage AC drive is designed based on the two-quadrant synchronous/asynchronous motor control platform, featuring a unit-cascaded bypass-capable architecture. Leveraging advanced vector control technology, it delivers an output voltage frrom 3kV to 13.8 kV, offering superior control precision and exceptional reliability. This drive meets modern industrial demands for energy efficiency optimization and process speed regulation in large/medium-sized fans and pumps.</p>"
   }
 
 ]

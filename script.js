@@ -195,23 +195,40 @@ function updateCartUI() {
         cartItemsDiv.innerHTML = `<p class="text-center text-gray-400 mt-10 text-xs font-bold">Your shopping cart is empty...</p>`;
     } else {
         cartItemsDiv.innerHTML = cart.map((item, index) => `
-            <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-gray-100 shadow-sm mb-2">
-                <div class="w-12 h-12 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden border">
-                    <img src="${item.img}" class="w-full h-full object-contain">
+            <div class="flex items-start gap-4 bg-white p-3 rounded-xl border border-gray-100 shadow-sm mb-2">
+                <div class="w-16 h-16 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden border flex items-center justify-center">
+                    <img src="${item.img}" class="w-full h-full object-contain p-1">
                 </div>
-                <div class="flex-1 min-w-0">
+                
+                <div class="flex-1 min-w-0 flex flex-col gap-1.5">
                     <p class="font-bold text-gray-800 text-[11px] truncate">${item.name}</p>
-                    <div class="flex items-center gap-2 mt-1">
+                    
+                    <div>
+                        <textarea 
+                            onchange="saveCartNote(${index}, this.value)"
+                            class="w-full h-10 text-[8px] p-2 border border-gray-200 rounded-md focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400 transition resize-none placeholder-gray-400"
+                            placeholder="Enter inquiries or project details.">${item.note || ''}</textarea>
+                    </div>
+                    
+                    <div class="flex items-center gap-2 mt-0.5">
                         <button onclick="changeQty(${index}, -1)" class="w-5 h-5 bg-gray-100 rounded text-xs hover:bg-gray-200">-</button>
                         <span class="text-xs font-bold">${item.quantity}</span>
                         <button onclick="changeQty(${index}, 1)" class="w-5 h-5 bg-gray-100 rounded text-xs hover:bg-gray-200">+</button>
                     </div>
                 </div>
-                <button onclick="removeItem(${index})" class="text-gray-300 hover:text-red-500 p-2">
+                
+                <button onclick="removeItem(${index})" class="text-gray-300 hover:text-red-500 p-1 flex-shrink-0 self-start mt-0.5">
                     <i class="fa-solid fa-trash-can text-xs"></i>
                 </button>
             </div>
         `).join('');
+    }
+}
+
+function saveCartNote(index, value) {
+    if (cart[index]) {
+        cart[index].note = value;
+        localStorage.setItem('aitCart', JSON.stringify(cart));
     }
 }
 
@@ -283,28 +300,21 @@ function filterByCategory(categoryName) {
             if (!item.categoryTag) return false;
 
             const tagsString = String(item.categoryTag).toLowerCase().trim();
-            // แยกแท็กใน JSON ออกมาเป็นลิสต์ (Array)
             const tagsArray = tagsString.split(',').map(t => t.trim());
 
-            // --- 1. โซนดักคำว่า "Valves" (หรือ Valve) ---
             if (searchCat === 'valves' || searchCat === 'valve') {
                 return tagsArray.some(tag => {
-                    // ต้องมีคำว่า valve แต่ "ต้องไม่มี" คำว่า accessories หรือ access อยู่ในแท็กนั้น
                     return tag.includes('valve') && 
                            !tag.includes('accessories') && 
                            !tag.includes('access');
                 });
             }
 
-            // --- 2. โซนดักคำว่า "Flow" (เหมือนเดิมที่เคยทำไว้จ้ะ) ---
             if (searchCat === 'flow') {
                 return tagsArray.some(tag => {
                     return tag.includes('flow') && !tag.includes('mass');
                 });
             }
-
-            // --- 3. โซนหมวดหมู่อื่นๆ (รวมถึงพวก Transducers และ Valve Accessories เอง) ---
-            // ส่วนนี้จะปล่อยให้มันหาแบบปกติ เพื่อให้อันยาวๆ เปิดได้จ้ะ
             return tagsArray.some(tag => {
                 return tag === searchCat || tag.includes(searchCat);
             });
@@ -459,4 +469,38 @@ function toggleAccordion(id) {
         subMenu.classList.add('hidden');
         if (icon) icon.style.transform = 'rotate(0deg)';
     }
+}
+
+function sendQuoteRequest() {
+    // 1. Check if the cart is empty
+    if (cart.length === 0) {
+        alert("Please add products to your cart before requesting a quotation.");
+        return;
+    }
+
+    // 2. Set Destination Email and Subject
+    const companyEmail = "info@aitengineering.co.th";
+    const subject = encodeURIComponent("Request for Quotation - AIT Engineering & Service");
+
+    // 3. Generate English Email Body from Cart Items
+    let emailBody = "Dear Engineering Team,\n\nI would like to request a quotation for the following items:\n";
+    emailBody += "--------------------------------------------------\n";
+
+    cart.forEach((item, index) => {
+        emailBody += `${index + 1}. Product Name: ${item.name}\n`;
+        emailBody += `   Quantity: ${item.quantity} pcs\n`;
+        
+        // If the item has custom inquiries/notes
+        if (item.note) {
+            emailBody += `   Additional Inquiry: ${item.note}\n`;
+        }
+        emailBody += "--------------------------------------------------\n";
+    });
+
+    emailBody += "\nPlease review the specifications and reply with a quotation at your earliest convenience.\n\nBest regards,";
+
+    const formattedBody = encodeURIComponent(emailBody);
+
+    // 4. Open Default Mail Client
+    window.location.href = `mailto:${companyEmail}?subject=${subject}&body=${formattedBody}`;
 }

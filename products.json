@@ -2333,8 +2333,8 @@
     "desc": "<p>The new K20 is a next generation intrinsically safe electro-pneumatic positioner, that delivers improved levels of reliability and modulating position control via simple calibration. <br>Features & Benefits: <br>-Simplified calibration with two keys. <br>-Globally approved intrinsically safe design. <br>-Hall effect based position sensing with no mechanical wear. <br>-Feedback output as standard with switches/sensors if required. <br>-Completely interchangeable with the previous K10 models. <br>-Iconic Westlock Beacon on top </p>"
   },
   {
-    "name": "kinax 2w2 persp-1",
-    "sku": "kinax-2w2-persp-1",
+    "name": "kinax 2w2",
+    "sku": "kinax-2w2",
     "page": "camille",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -2342,8 +2342,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax 3w2 persp-1",
-    "sku": "kinax-3w2-persp-1",
+    "name": "kinax 3w2",
+    "sku": "kinax-3w2",
     "page": "camille",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -2351,8 +2351,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt707 persp-1",
-    "sku": "kinax-wt707-persp-1",
+    "name": "kinax wt707",
+    "sku": "kinax-wt707",
     "page": "camille",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -2360,8 +2360,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt717 persp-1",
-    "sku": "kinax-wt717-persp-1",
+    "name": "kinax wt717",
+    "sku": "kinax-wt717",
     "page": "camille",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -2369,8 +2369,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt720 persp-1",
-    "sku": "kinax-wt720-persp-1",
+    "name": "kinax wt720",
+    "sku": "kinax-wt720",
     "page": "camille",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -2378,8 +2378,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax n702 inox persp-2",
-    "sku": "kinax-n702-inox-persp-2",
+    "name": "kinax n702 inox",
+    "sku": "kinax-n702-inox",
     "page": "camille",
     "category": "Camille Bauer, Inclination transmitter",
     "categoryTag": ["camille-bauer","inclination-transmitter"],
@@ -2387,8 +2387,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax n702 ssi persp-2",
-    "sku": "kinax-n702-ssi-persp-2",
+    "name": "kinax n702 ssi",
+    "sku": "kinax-n702-ssi",
     "page": "camille",
     "category": "Camille Bauer, Inclination transmitter",
     "categoryTag": ["camille-bauer","inclination-transmitter"],
@@ -2396,8 +2396,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax am1000 image front",
-    "sku": "sineax-am1000-image-front",
+    "name": "sineax am1000",
+    "sku": "sineax-am1000",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2405,8 +2405,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax am3000 front",
-    "sku": "sineax-am3000-front",
+    "name": "sineax am3000",
+    "sku": "sineax-am3000",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2414,8 +2414,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax dm5 front best seller",
-    "sku": "sineax-dm5-front-best-seller",
+    "name": "sineax dm5 best seller",
+    "sku": "sineax-dm5-best-seller",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2423,8 +2423,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax dm5000 front",
-    "sku": "sineax-dm5000-front",
+    "name": "sineax dm5000",
+    "sku": "sineax-dm5000",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2432,8 +2432,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax v604s front",
-    "sku": "sineax-v604s-front",
+    "name": "sineax v604s",
+    "sku": "sineax-v604s",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2441,8 +2441,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1250 front image",
-    "sku": "sirax-bm1250-front-image",
+    "name": "sirax bm1250",
+    "sku": "sirax-bm1250",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2450,8 +2450,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1400 front image",
-    "sku": "sirax-bm1400-front-image",
+    "name": "sirax bm1400",
+    "sku": "sirax-bm1400",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2459,8 +2459,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1450 front image DC",
-    "sku": "sirax-bm1450-front-image-DC",
+    "name": "sirax bm1450",
+    "sku": "sirax-bm1450",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2468,8 +2468,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5100-1 persp-1",
-    "sku": "sirax-bt5100-1-persp-1",
+    "name": "sirax bt5100-1",
+    "sku": "sirax-bt5100-1",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2477,8 +2477,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5210 persp-1-new",
-    "sku": "sirax-bt5210-persp-1-new",
+    "name": "sirax bt5210",
+    "sku": "sirax-bt5210",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2486,8 +2486,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5400-1 persp-1",
-    "sku": "sirax-bt5400-1-persp-1",
+    "name": "sirax bt5400",
+    "sku": "sirax-bt5400",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2495,8 +2495,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5600 persp-1 klein",
-    "sku": "sirax-bt5600-persp-1-klein",
+    "name": "sirax bt5600",
+    "sku": "sirax-bt5600",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2504,8 +2504,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5700 persp-1",
-    "sku": "sirax-bt5700-persp-1",
+    "name": "sirax bt5700",
+    "sku": "sirax-bt5700",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2513,8 +2513,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax mt7000 persp-1",
-    "sku": "sirax-mt7000-persp-1",
+    "name": "sirax mt7000",
+    "sku": "sirax-mt7000",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2522,8 +2522,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax mt7100 persp-2",
-    "sku": "sirax-mt7100-persp-2",
+    "name": "sirax mt7100",
+    "sku": "sirax-mt7100",
     "page": "camille",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -2531,8 +2531,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "hdpq guideplus front image",
-    "sku": "hdpq-guideplus-front-image",
+    "name": "hdpq guideplus",
+    "sku": "hdpq-guideplus",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2540,8 +2540,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax cl front image",
-    "sku": "linax-cl-front-image",
+    "name": "linax cl",
+    "sku": "linax-cl",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2549,8 +2549,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq single rack front",
-    "sku": "linax-pq-single-rack-front",
+    "name": "linax pq single rack",
+    "sku": "linax-pq-single-rack",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2558,8 +2558,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq1000 front ",
-    "sku": "linax-pq1000-front",
+    "name": "linax pq1000",
+    "sku": "linax-pq1000",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2567,8 +2567,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq3000 front ",
-    "sku": "linax-pq3000-front",
+    "name": "linax pq3000",
+    "sku": "linax-pq3000",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2576,8 +2576,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq5000 front ",
-    "sku": "linax-pq5000-front",
+    "name": "linax pq5000",
+    "sku": "linax-pq5000",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -2585,8 +2585,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "pq5000mob front image",
-    "sku": "pq5000mob-front-image",
+    "name": "pq5000mob",
+    "sku": "pq5000mob",
     "page": "camille",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3497,8 +3497,8 @@
     "desc": "<p>The new K20 is a next generation intrinsically safe electro-pneumatic positioner, that delivers improved levels of reliability and modulating position control via simple calibration. <br>Features & Benefits: <br>-Simplified calibration with two keys. <br>-Globally approved intrinsically safe design. <br>-Hall effect based position sensing with no mechanical wear. <br>-Feedback output as standard with switches/sensors if required. <br>-Completely interchangeable with the previous K10 models. <br>-Iconic Westlock Beacon on top </p>"
   },
   {
-    "name": "kinax 2w2 persp-1",
-    "sku": "kinax-2w2-persp-1",
+    "name": "kinax 2w2",
+    "sku": "kinax-2w2",
     "page": "products",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -3506,8 +3506,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax 3w2 persp-1",
-    "sku": "kinax-3w2-persp-1",
+    "name": "kinax 3w2",
+    "sku": "kinax-3w2",
     "page": "products",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -3515,8 +3515,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt707 persp-1",
-    "sku": "kinax-wt707-persp-1",
+    "name": "kinax wt707",
+    "sku": "kinax-wt707",
     "page": "products",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -3524,8 +3524,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt717 persp-1",
-    "sku": "kinax-wt717-persp-1",
+    "name": "kinax wt717",
+    "sku": "kinax-wt717",
     "page": "products",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -3533,8 +3533,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax wt720 persp-1",
-    "sku": "kinax-wt720-persp-1",
+    "name": "kinax wt720",
+    "sku": "kinax-wt720",
     "page": "products",
     "category": "Camille Bauer, Angle transmitter",
     "categoryTag": ["camille-bauer","angle-transmitter"],
@@ -3542,8 +3542,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax n702 inox persp-2",
-    "sku": "kinax-n702-inox-persp-2",
+    "name": "kinax n702 inox",
+    "sku": "kinax-n702-inox",
     "page": "products",
     "category": "Camille Bauer, Inclination transmitter",
     "categoryTag": ["camille-bauer","inclination-transmitter"],
@@ -3551,8 +3551,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "kinax n702 ssi persp-2",
-    "sku": "kinax-n702-ssi-persp-2",
+    "name": "kinax n702 ssi",
+    "sku": "kinax-n702-ssi",
     "page": "products",
     "category": "Camille Bauer, Inclination transmitter",
     "categoryTag": ["camille-bauer","inclination-transmitter"],
@@ -3560,8 +3560,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax am1000 image front",
-    "sku": "sineax-am1000-image-front",
+    "name": "sineax am1000",
+    "sku": "sineax-am1000",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3569,8 +3569,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax am3000 front",
-    "sku": "sineax-am3000-front",
+    "name": "sineax am3000",
+    "sku": "sineax-am3000",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3578,8 +3578,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax dm5 front best seller",
-    "sku": "sineax-dm5-front-best-seller",
+    "name": "sineax dm5 best seller",
+    "sku": "sineax-dm5-best-seller",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3587,8 +3587,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax dm5000 front",
-    "sku": "sineax-dm5000-front",
+    "name": "sineax dm5000",
+    "sku": "sineax-dm5000",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3596,8 +3596,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sineax v604s front",
-    "sku": "sineax-v604s-front",
+    "name": "sineax v604s",
+    "sku": "sineax-v604s",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3605,8 +3605,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1250 front image",
-    "sku": "sirax-bm1250-front-image",
+    "name": "sirax bm1250",
+    "sku": "sirax-bm1250",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3614,8 +3614,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1400 front image",
-    "sku": "sirax-bm1400-front-image",
+    "name": "sirax bm1400",
+    "sku": "sirax-bm1400",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3623,8 +3623,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bm1450 front image DC",
-    "sku": "sirax-bm1450-front-image-DC",
+    "name": "sirax bm1450 DC",
+    "sku": "sirax-bm1450-DC",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3632,8 +3632,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5100-1 persp-1",
-    "sku": "sirax-bt5100-1-persp-1",
+    "name": "sirax bt5100-1",
+    "sku": "sirax-bt5100-1",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3641,8 +3641,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5210 persp-1-new",
-    "sku": "sirax-bt5210-persp-1-new",
+    "name": "sirax bt5210",
+    "sku": "sirax-bt5210",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3650,8 +3650,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5400-1 persp-1",
-    "sku": "sirax-bt5400-1-persp-1",
+    "name": "sirax bt5400-1",
+    "sku": "sirax-bt5400-1",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3659,8 +3659,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5600 persp-1 klein",
-    "sku": "sirax-bt5600-persp-1-klein",
+    "name": "sirax bt5600",
+    "sku": "sirax-bt5600",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3668,8 +3668,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax bt5700 persp-1",
-    "sku": "sirax-bt5700-persp-1",
+    "name": "sirax bt5700",
+    "sku": "sirax-bt5700",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3677,8 +3677,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax mt7000 persp-1",
-    "sku": "sirax-mt7000-persp-1",
+    "name": "sirax mt7000",
+    "sku": "sirax-mt7000",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3686,8 +3686,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "sirax mt7100 persp-2",
-    "sku": "sirax-mt7100-persp-2",
+    "name": "sirax mt7100",
+    "sku": "sirax-mt7100",
     "page": "products",
     "category": "Camille Bauer, Power monitoring",
     "categoryTag": ["camille-bauer","power-monitoring"],
@@ -3695,8 +3695,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "hdpq guideplus front image",
-    "sku": "hdpq-guideplus-front-image",
+    "name": "hdpq guideplus",
+    "sku": "hdpq-guideplus",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3704,8 +3704,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax cl front image",
-    "sku": "linax-cl-front-image",
+    "name": "linax cl",
+    "sku": "linax-cl",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3713,8 +3713,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq single rack front",
-    "sku": "linax-pq-single-rack-front",
+    "name": "linax pq single rack",
+    "sku": "linax-pq-single-rack",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3722,8 +3722,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq1000 front ",
-    "sku": "linax-pq1000-front",
+    "name": "linax pq1000",
+    "sku": "linax-pq1000",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3731,8 +3731,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq3000 front ",
-    "sku": "linax-pq3000-front",
+    "name": "linax pq3000",
+    "sku": "linax-pq3000",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3740,8 +3740,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "linax pq5000 front ",
-    "sku": "linax-pq5000-front",
+    "name": "linax pq5000",
+    "sku": "linax-pq5000",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],
@@ -3749,8 +3749,8 @@
     "desc": "<p>Detailed specifications are currently being updated. If you would like to know more about this product or require any technical assistance, please feel free to contact our team.</p>"
   },
   {
-    "name": "pq5000mob front image",
-    "sku": "pq5000mob-front-image",
+    "name": "pq5000mob",
+    "sku": "pq5000mob",
     "page": "products",
     "category": "Camille Bauer, Power quality",
     "categoryTag": ["camille-bauer","power-quality"],

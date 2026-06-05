@@ -353,7 +353,7 @@
                     <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
                         <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
 
-                        <form id="contactForm" class="space-y-8">
+                        <form id="contactForm" action="send-email.php" method="POST" class="space-y-8">
                             <div class="space-y-6">
                                 <div class="space-y-2">
                                     <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
@@ -448,7 +448,7 @@
                     <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
                         <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
 
-                        <form id="contactForm" class="space-y-8">
+                        <form id="contactForm" action="send-email.php" method="POST" class="space-y-8">
                             <div class="space-y-6">
                                 <div class="space-y-2">
                                     <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
@@ -544,7 +544,7 @@
                     <div class="lg:col-span-7 bg-white/60 backdrop-blur-xl p-10 lg:p-14 rounded-[2.5rem] border border-white shadow-[0_20px_50px_rgba(0,0,0,0.04)]">
                         <h3 class="text-2xl font-bold text-gray-800 mb-10">Send a message</h3>
 
-                        <form id="contactForm" class="space-y-8">
+                        <form id="contactForm" action="send-email.php" method="POST" class="space-y-8">
                             <div class="space-y-6">
                                 <div class="space-y-2">
                                     <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest ml-1">Full Name</label>
@@ -595,6 +595,21 @@
             </div>
         </section>
     </div>
+
+    
+    <script>
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('status') === 'success') {
+            alert('✅ Inquiry submitted. Thank you for contacting us!');
+        } else if (params.get('status') === 'error') {
+            alert('❌ Something went wrong. Please try again or contact us directly.');
+        }
+        if (params.has('status')) {
+            history.replaceState({}, '', 'contact.html');
+        }
+    };
+    </script>
 
     <footer class="bg-[#0a2540] py-16 text-white relative overflow-hidden">
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 blur-[100px] -z-10"></div>

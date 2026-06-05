@@ -225,6 +225,144 @@ function updateCartUI() {
     }
 }
 
+// =====================================================
+//  แทนที่ sendQuoteRequest() เดิมใน script.js ด้วยนี้
+// =====================================================
+
+function sendQuoteRequest() {
+    if (cart.length === 0) {
+        alert("Please add products to your cart before requesting a quotation.");
+        return;
+    }
+
+    // สร้าง modal กรอกข้อมูลผู้ติดต่อ
+    if (!document.getElementById('quoteModal')) {
+        document.body.insertAdjacentHTML('beforeend', `
+        <div id="quoteModal"
+            class="fixed inset-0 bg-black/60 flex items-center justify-center z-[150] p-4 backdrop-blur-sm">
+            <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl p-8 relative">
+
+                <button onclick="closeQuoteModal()"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-xl transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h3 class="text-xl font-bold text-[#1a4066] mb-1">Request a Quotation</h3>
+                <p class="text-xs text-gray-400 mb-6 uppercase tracking-widest">
+                    ${cart.length} item(s) · fill in your contact details
+                </p>
+
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest">Full Name *</label>
+                        <input id="qFullname" type="text" placeholder="Your Name"
+                            class="mt-1 w-full border border-gray-200 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-blue-400 transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest">Company</label>
+                        <input id="qCompany" type="text" placeholder="Company Name (optional)"
+                            class="mt-1 w-full border border-gray-200 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-blue-400 transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest">Email *</label>
+                        <input id="qEmail" type="email" placeholder="example@gmail.com"
+                            class="mt-1 w-full border border-gray-200 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-blue-400 transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold uppercase text-gray-400 tracking-widest">Tel. *</label>
+                        <input id="qTel" type="tel" placeholder="Your Phone Number"
+                            class="mt-1 w-full border border-gray-200 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-blue-400 transition">
+                    </div>
+                </div>
+
+                <button onclick="submitQuote()" id="quoteSubmitBtn"
+                    class="mt-6 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 rounded-xl uppercase tracking-widest transition shadow-lg active:scale-95">
+                    Send Quotation Request
+                </button>
+
+                <p id="quoteMsg" class="text-center text-xs mt-3 hidden"></p>
+            </div>
+        </div>`);
+    } else {
+        document.getElementById('quoteModal').classList.remove('hidden');
+        document.getElementById('quoteModal').classList.add('flex');
+    }
+}
+
+function closeQuoteModal() {
+    const modal = document.getElementById('quoteModal');
+    if (modal) modal.remove();
+}
+
+async function submitQuote() {
+    const fullname = document.getElementById('qFullname').value.trim();
+    const company  = document.getElementById('qCompany').value.trim();
+    const email    = document.getElementById('qEmail').value.trim();
+    const tel      = document.getElementById('qTel').value.trim();
+    const msgEl    = document.getElementById('quoteMsg');
+    const btn      = document.getElementById('quoteSubmitBtn');
+
+    // Validate
+    if (!fullname || !email || !tel) {
+        msgEl.textContent = '⚠️ Please fill in Name, Email and Phone Number.';
+        msgEl.className = 'text-center text-xs mt-3 text-red-500';
+        msgEl.classList.remove('hidden');
+        return;
+    }
+
+    // เตรียม payload รวม items + notes จากตะกร้า
+    const payload = {
+        fullname,
+        company,
+        email,
+        tel,
+        items: cart.map(item => ({
+            name:     item.name,
+            sku:      item.sku      || '',
+            quantity: item.quantity,
+            note:     item.note     || ''
+        }))
+    };
+
+    // Loading state
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    try {
+        const res  = await fetch('send-quote.php', {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify(payload)
+        });
+        const data = await res.json();
+
+        if (data.success) {
+            msgEl.textContent = '✅ Quotation request sent! We will contact you shortly.';
+            msgEl.className = 'text-center text-xs mt-3 text-green-600 font-bold';
+            msgEl.classList.remove('hidden');
+
+            // ล้างตะกร้า + ปิด modal หลัง 2.5 วิ
+            setTimeout(() => {
+                cart = [];
+                localStorage.setItem('aitCart', JSON.stringify(cart));
+                updateCartUI();
+                closeQuoteModal();
+                toggleCart();
+            }, 2500);
+
+        } else {
+            throw new Error(data.message || 'Something went wrong.');
+        }
+
+    } catch (err) {
+        msgEl.textContent = '❌ ' + err.message;
+        msgEl.className = 'text-center text-xs mt-3 text-red-500';
+        msgEl.classList.remove('hidden');
+        btn.disabled = false;
+        btn.textContent = 'Send Quotation Request';
+    }
+}
+
 function saveCartNote(index, value) {
     if (cart[index]) {
         cart[index].note = value;
